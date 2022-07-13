@@ -116,42 +116,42 @@ namespace FreelanceApp
             // 
             this.txtProjectId.Location = new System.Drawing.Point(122, 68);
             this.txtProjectId.Name = "txtProjectId";
-            this.txtProjectId.Size = new System.Drawing.Size(100, 23);
+            this.txtProjectId.Size = new System.Drawing.Size(141, 23);
             this.txtProjectId.TabIndex = 7;
             // 
             // txtPaymentAmount
             // 
             this.txtPaymentAmount.Location = new System.Drawing.Point(122, 111);
             this.txtPaymentAmount.Name = "txtPaymentAmount";
-            this.txtPaymentAmount.Size = new System.Drawing.Size(100, 23);
+            this.txtPaymentAmount.Size = new System.Drawing.Size(141, 23);
             this.txtPaymentAmount.TabIndex = 8;
             // 
             // txtMessage
             // 
             this.txtMessage.Location = new System.Drawing.Point(122, 158);
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(100, 23);
+            this.txtMessage.Size = new System.Drawing.Size(141, 23);
             this.txtMessage.TabIndex = 9;
             // 
             // txtStatus
             // 
             this.txtStatus.Location = new System.Drawing.Point(345, 68);
             this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(100, 23);
+            this.txtStatus.Size = new System.Drawing.Size(179, 23);
             this.txtStatus.TabIndex = 10;
             // 
             // txtCreatedDate
             // 
             this.txtCreatedDate.Location = new System.Drawing.Point(345, 110);
             this.txtCreatedDate.Name = "txtCreatedDate";
-            this.txtCreatedDate.Size = new System.Drawing.Size(100, 23);
+            this.txtCreatedDate.Size = new System.Drawing.Size(179, 23);
             this.txtCreatedDate.TabIndex = 11;
             // 
             // txtSeekerId
             // 
             this.txtSeekerId.Location = new System.Drawing.Point(345, 158);
             this.txtSeekerId.Name = "txtSeekerId";
-            this.txtSeekerId.Size = new System.Drawing.Size(100, 23);
+            this.txtSeekerId.Size = new System.Drawing.Size(179, 23);
             this.txtSeekerId.TabIndex = 12;
             this.txtSeekerId.Visible = false;
             // 
@@ -159,7 +159,7 @@ namespace FreelanceApp
             // 
             this.txtProposalId.Location = new System.Drawing.Point(345, 203);
             this.txtProposalId.Name = "txtProposalId";
-            this.txtProposalId.Size = new System.Drawing.Size(100, 23);
+            this.txtProposalId.Size = new System.Drawing.Size(179, 23);
             this.txtProposalId.TabIndex = 13;
             this.txtProposalId.Visible = false;
             // 
