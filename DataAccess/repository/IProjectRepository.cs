@@ -19,5 +19,7 @@ namespace DataAccess.repository
         bool Update(Project Project);
 
         string getSkillProjectNeed(int projectid);
+
+        bool Delete(int ProjectID);
     }
 }

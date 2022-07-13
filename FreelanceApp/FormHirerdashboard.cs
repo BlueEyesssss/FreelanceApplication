@@ -17,6 +17,7 @@ namespace FreelanceApp
     {
         public int HirerId; //id cua nguoi hirer dang nhap vao
         IProjectRepository ProjectRepository = new ProjectRepository();
+        INeededSkillRepository NeededSkillRepository = new NeededSkillRepository();
         BindingSource source;
         public FormHirerdashboard()
         {
@@ -230,6 +231,38 @@ namespace FreelanceApp
 
         private void dataGridViewListPostedJob_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        
+
+        private void buttonDelete_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                var Project = GetProject();
+                DialogResult dialogResult = MessageBox.Show("are you sure you want to delete this project?", "Sure?", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    bool checkNeededSkill = NeededSkillRepository.DeleteNeedeSkillByProjectID(Project.ProjectId);
+                    bool checkDelete = ProjectRepository.Delete(Project.ProjectId);
+                    if (checkNeededSkill & checkDelete)
+                    {
+                        MessageBox.Show("Delee Successfully!");
+                        LoadPostedProjectList();
+                    }
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Delete a project");
+
+            }
+
 
         }
 

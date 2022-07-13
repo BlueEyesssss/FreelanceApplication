@@ -51,7 +51,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.buttonLoad = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListPostedJob)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAcceptedJob)).BeginInit();
             this.SuspendLayout();
@@ -261,22 +261,22 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "PaymentAmount";
             // 
-            // buttonLoad
+            // buttonDelete
             // 
-            this.buttonLoad.Location = new System.Drawing.Point(935, 513);
-            this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(75, 23);
-            this.buttonLoad.TabIndex = 21;
-            this.buttonLoad.Text = "Load";
-            this.buttonLoad.UseVisualStyleBackColor = true;
-            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
+            this.buttonDelete.Location = new System.Drawing.Point(956, 342);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelete.TabIndex = 22;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click_1);
             // 
             // FormHirerdashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1074, 620);
-            this.Controls.Add(this.buttonLoad);
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -335,6 +335,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button buttonLoad;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

@@ -232,6 +232,7 @@
             // 
             this.textBoxProjectID.Location = new System.Drawing.Point(201, 70);
             this.textBoxProjectID.Name = "textBoxProjectID";
+            this.textBoxProjectID.ReadOnly = true;
             this.textBoxProjectID.Size = new System.Drawing.Size(100, 23);
             this.textBoxProjectID.TabIndex = 39;
             // 
@@ -239,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(944, 544);
             this.Controls.Add(this.textBoxProjectID);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.checkedListBoxSkill);
