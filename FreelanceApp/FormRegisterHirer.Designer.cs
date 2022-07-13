@@ -183,6 +183,7 @@
             this.Name = "FormRegisterHirer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormRegisterHirer";
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 

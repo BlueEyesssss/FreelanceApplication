@@ -2179,11 +2179,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
+      "projectUniqueName": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
       "projectName": "FreelanceApp",
-      "projectPath": "D:\\github\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
+      "projectPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
       "packagesPath": "C:\\Users\\Phat\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\FreelanceApplication\\FreelanceApp\\obj\\",
+      "outputPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\FreelanceApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Phat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2200,11 +2200,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
+            "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
             },
-            "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\DataAccess\\DataAccess.csproj"
             }
           }
         }

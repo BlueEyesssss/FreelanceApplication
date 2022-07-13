@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A4EfBOPOTuKQH4K76FruNVP1Gc6fArd/obOD6ArQJoYFMSg3CkxQnPjo96SuyscyDmn8T7QAaLm14mjJZHpuqQ==",
+  "dgSpecHash": "NEBL7Kq0IwC3+FnrBZ0IRQmNw3q9Bgqkhj+dzl+QzSCMa96sJeAoZlX7zfqIx7GKJQJEm/4+70iIHnZkQwrQsw==",
   "success": true,
-  "projectFilePath": "D:\\github\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
+  "projectFilePath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Phat\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Phat\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1lhFCTLnmtR782SzBXPU+nByDZ7XqVKzdxgui86Z9SkTj4R2D0kg1VUuLWkdAElMFh8mPUT1zgw+g9FvboSatw==",
+  "dgSpecHash": "aoSykeWIoBR1hXgDU7pVt/1ryO0RAEHo34IH+af+s/kwoza3/WMJlQAEKrlgYmL4tPyjQXdK/6PCOMfaz+2HFA==",
   "success": true,
-  "projectFilePath": "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Phat\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Phat\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

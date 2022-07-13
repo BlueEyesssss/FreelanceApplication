@@ -2160,11 +2160,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\Phat\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\FreelanceApplication\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Phat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2181,8 +2181,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
+            "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
             }
           }
         }

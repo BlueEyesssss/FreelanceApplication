@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {}
+    "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {}
   },
   "projects": {
-    "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
+    "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
+        "projectPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
         "packagesPath": "C:\\Users\\Phat\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\FreelanceApplication\\BusinessObject\\obj\\",
+        "outputPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Phat\\AppData\\Roaming\\NuGet\\NuGet.Config",

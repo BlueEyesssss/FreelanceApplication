@@ -25,7 +25,39 @@ namespace FreelanceApp
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            
+            if (textBoxUserName.Text.Length < 5 || textBoxUserName.Text.Length > 50)
+            {
+                MessageBox.Show("username must be in [5;50]");
+                return;
+            }
+            if (textBoxPassword.Text.Length < 5 || textBoxPassword.Text.Length > 50)
+            {
+                MessageBox.Show("password must be in [5;50]");
+                return;
+            }
+            if (textBoxFullName.Text.Length < 5 || textBoxFullName.Text.Length > 50)
+            {
+                MessageBox.Show("fullname must be in [5;50]");
+                return;
+            }
+            if (textBoxLocation.Text.Length < 5 || textBoxLocation.Text.Length > 50)
+            {
+                MessageBox.Show("Location must be in [5;50]");
+                return;
+            }
+            if (textBoxCompany.Text.Length < 5 || textBoxCompany.Text.Length > 50)
+            {
+                MessageBox.Show("company must be in [5;50]");
+                return;
+            }
+            if (maskedTextBoxPhone.Text.Length != 10)
+            {
+                MessageBox.Show("Please input phone with 10 digits");
+                return;
+            }
+
+
+
 
             try
             {
@@ -49,6 +81,7 @@ namespace FreelanceApp
                         if (HirerRepository.createHirer(Hirer))
                         {
                             MessageBox.Show("create hirer success", "register hirer");
+                            this.Close();
                         }
                         else
                         {
@@ -71,5 +104,7 @@ namespace FreelanceApp
                 MessageBox.Show(ex.Message, "register hirer");
             }
         }
+
+        
     }
 }
