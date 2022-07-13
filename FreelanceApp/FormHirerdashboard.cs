@@ -25,44 +25,47 @@ namespace FreelanceApp
 
         private void buttonViewPostedJob_Click(object sender, EventArgs e)
         {
-            List<Project> listP = ProjectRepository.getListProject();
 
-            List<Project> listPNotStarted = new List<Project>();    //list này đc nhưng mà nó dư 3 att là hirer, needskill, proposal nên xài list dưới
-            List<dynamic> listPNotStarted1 = new List<dynamic>();
-            foreach (var item in listP)
-            {
-                if (ProjectRepository.checkProjectStarted(item.ProjectId) == false)
-                {
-                    if (item.HirerId == this.HirerId)
-                    {
-                        listPNotStarted.Add(item);
-                        listPNotStarted1.Add(new
-                        {
-                            ProjectId = item.ProjectId,
-                            ProjectName = item.ProjectName,
-                            Description = item.Description,
-                            HirerId = item.HirerId,
-                            Location = item.Location,
-                            PaymentAmount = item.PaymentAmount,
-                            Major = item.Major,
-                            Complexity = item.Complexity,
-                            ExpectedDuration = item.ExpectedDuration,
-                            CreatedDate = item.CreatedDate
-                        });
-                    }
-                }
-            }
+            //List<Project> listP = ProjectRepository.getListProject();
 
-            if (listPNotStarted1.Count != 0)
-            {
-                dataGridViewListPostedJob.DataSource = listPNotStarted1;
+            //List<Project> listPNotStarted = new List<Project>();    //list này đc nhưng mà nó dư 3 att là hirer, needskill, proposal nên xài list dưới
+            //List<dynamic> listPNotStarted1 = new List<dynamic>();
+            //foreach (var item in listP)
+            //{
+            //    if (ProjectRepository.checkProjectStarted(item.ProjectId) == false)
+            //    {
+            //        if (item.HirerId == this.HirerId)
+            //        {
+            //            listPNotStarted.Add(item);
+            //            listPNotStarted1.Add(new
+            //            {
+            //                ProjectId = item.ProjectId,
+            //                ProjectName = item.ProjectName,
+            //                Description = item.Description,
+            //                HirerId = item.HirerId,
+            //                Location = item.Location,
+            //                PaymentAmount = item.PaymentAmount,
+            //                Major = item.Major,
+            //                Complexity = item.Complexity,
+            //                ExpectedDuration = item.ExpectedDuration,
+            //                CreatedDate = item.CreatedDate
+            //            });
+            //        }
+            //    }
+            //}
 
-            }
-            else
-            {
-                MessageBox.Show("No item in the list");
+            LoadPostedProjectList();
 
-            }
+            //if (listPNotStarted1.Count != 0)
+            //{
+            //    dataGridViewListPostedJob.DataSource = listPNotStarted1;
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show("No item in the list");
+
+            //}
 
 
 

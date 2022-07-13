@@ -259,17 +259,17 @@ namespace DataAccess
                     connect.Open();
                     string sql = "UPDATE Project SET projectName = @projectName, description = @description, hirerID = @hirerID, location = @location, paymentAmount = @paymentAmount, major = @major, complexity = @complexity, expectedDuration = @expectedDuration, createdDate = @createdDate from Project where projectID = @id";
                     commad = new SqlCommand(sql, connect);
-                    commad.Parameters.AddWithValue("@projectName", temp.ProjectName);
-                    commad.Parameters.AddWithValue("@description", temp.Description);
-                    commad.Parameters.AddWithValue("@hirerID", temp.HirerId);
-                    commad.Parameters.AddWithValue("@location", temp.Location);
-                    commad.Parameters.AddWithValue("@paymentAmount", temp.PaymentAmount);
-                    commad.Parameters.AddWithValue("@major", temp.Major);
-                    commad.Parameters.AddWithValue("@complexity", temp.Complexity);
-                    commad.Parameters.AddWithValue("@expectedDuration", temp.ExpectedDuration);
-                    commad.Parameters.AddWithValue("@createdDate", temp.CreatedDate);
+                    commad.Parameters.AddWithValue("@projectName", Project.ProjectName);
+                    commad.Parameters.AddWithValue("@description", Project.Description);
+                    commad.Parameters.AddWithValue("@hirerID", Project.HirerId);
+                    commad.Parameters.AddWithValue("@location", Project.Location);
+                    commad.Parameters.AddWithValue("@paymentAmount", Project.PaymentAmount);
+                    commad.Parameters.AddWithValue("@major", Project.Major);
+                    commad.Parameters.AddWithValue("@complexity", Project.Complexity);
+                    commad.Parameters.AddWithValue("@expectedDuration", Project.ExpectedDuration);
+                    commad.Parameters.AddWithValue("@createdDate", Project.CreatedDate);
 
-                    commad.Parameters.AddWithValue("@id", temp.ProjectId);
+                    commad.Parameters.AddWithValue("@id", Project.ProjectId);
                     check = commad.ExecuteNonQuery() > 0? true : false;
                 }
             }
