@@ -128,6 +128,7 @@ namespace FreelanceApp
             // 
             // txtUserName
             // 
+            this.txtUserName.Enabled = false;
             this.txtUserName.Location = new System.Drawing.Point(110, 71);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(100, 23);
@@ -196,6 +197,7 @@ namespace FreelanceApp
             this.buttonCancel.TabIndex = 47;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // btUpdate
             // 
@@ -206,6 +208,7 @@ namespace FreelanceApp
             this.btUpdate.TabIndex = 46;
             this.btUpdate.Text = "Update";
             this.btUpdate.UseVisualStyleBackColor = true;
+            this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
             // 
             // FormSeekerProfile
             // 
@@ -232,6 +235,7 @@ namespace FreelanceApp
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.btUpdate);
             this.Name = "FormSeekerProfile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSeekerProfile";
             this.Load += new System.EventHandler(this.FormSeekerProfile_Load);
             this.ResumeLayout(false);

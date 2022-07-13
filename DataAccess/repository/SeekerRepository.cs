@@ -22,6 +22,8 @@ namespace DataAccess.repository
         public List<Seeker> GetListSeekerByid(int seekerid) => SeekerDAO.Instance.GetListSeekerByid(seekerid);
 
         public List<string> getSkillSeekerHas(int seekerid) => SeekerDAO.Instance.getSkillSeekerHas(seekerid);
+        public bool updateUSer_inSeeker(Seeker seeker) => SeekerDAO.Instance.updateUSer_inSeeker(seeker);
 
+        public bool updateSeeker(Seeker seeker) => SeekerDAO.Instance.updateSeeker(seeker);
     }
 }

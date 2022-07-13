@@ -108,7 +108,7 @@ namespace FreelanceApp
                 dtpExpedtedDay.Text = row.Cells[8].Value.ToString();
 
                 //get skill project need
-                //txtSkillNeed.Text = projectRepository.getSkillProjectNeed(int.Parse(row.Cells[0].Value.ToString()));
+                txtSkillNeed.Text = projectRepository.getSkillProjectNeed(int.Parse(row.Cells[0].Value.ToString()));
             }
             catch (Exception ex)
             {

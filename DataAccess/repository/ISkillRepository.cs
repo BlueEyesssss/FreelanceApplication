@@ -11,5 +11,6 @@ namespace DataAccess.repository
     {
         List<Skill> GetSkills();
         bool addSkill(int seekerid, int skillid);
+        bool clearAllSkillSeeker(int seekerid);
     }
 }
