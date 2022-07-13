@@ -74,6 +74,79 @@ namespace FreelanceApp
                 };
             }
 
+            if (txtUserName.Text.Length < 5 || txtUserName.Text.Length > 50)
+            {
+                return new
+                {
+                    check = false,
+                    msg = "username must be in [5;50]",
+                };
+            }
+            if (txtPwd.Text.Length < 5 || txtPwd.Text.Length > 50)
+            {
+                return new
+                {
+                    check = false,
+                    msg = "password must be in [5;50]",
+                };
+            }
+            if (txtFullname.Text.Length < 5 || txtFullname.Text.Length > 50)
+            {
+                return new
+                {
+                    check = false,
+                    msg = "fullname must be in [5;50]",
+                };
+            }
+            if (txtLocation.Text.Length < 5 || txtLocation.Text.Length > 50)
+            {
+                return new
+                {
+                    check = false,
+                    msg = "Location must be in [5;50]",
+                };
+            }
+            if (txtSchool.Text.Length < 5 || txtSchool.Text.Length > 50)
+            {
+                return new
+                {
+                    check = false,
+                    msg = "School must be in [5;50]",
+                };
+            }
+
+            if (txtPhone.Text.Length != 10)
+            {
+                return new
+                {
+                    check = false,
+                    msg = "Please input phone with 10 digits",
+                };
+            }
+            if (txtOverview.Text.Length < 5 || txtOverview.Text.Length > 50)
+            {
+                return new
+                {
+                    check = false,
+                    msg = "overview must be in [5;50]",
+                };
+            }
+            if (txtMajor.Text.Length < 5 || txtMajor.Text.Length > 50)
+            {
+                return new
+                {
+                    check = false,
+                    msg = "Major must be in [5;50]",
+                };
+            }
+            if (cbSkill.CheckedItems.Count == 0)
+            {
+                return new
+                {
+                    check = false,
+                    msg = "Please check at least one skill!",
+                };
+            }
 
             //no error
             return new
@@ -99,52 +172,7 @@ namespace FreelanceApp
         {
             try
             {
-                if (txtUserName.Text.Length < 5 || txtUserName.Text.Length > 50)
-                {
-                    MessageBox.Show("username must be in [5;50]");
-                    return;
-                }
-                if (txtPwd.Text.Length < 5 || txtPwd.Text.Length > 50)
-                {
-                    MessageBox.Show("password must be in [5;50]");
-                    return;
-                }
-                if (txtFullname.Text.Length < 5 || txtFullname.Text.Length > 50)
-                {
-                    MessageBox.Show("fullname must be in [5;50]");
-                    return;
-                }
-                if (txtLocation.Text.Length < 5 || txtLocation.Text.Length > 50)
-                {
-                    MessageBox.Show("Location must be in [5;50]");
-                    return;
-                }
-                if (txtSchool.Text.Length < 5 || txtSchool.Text.Length > 50)
-                {
-                    MessageBox.Show("School must be in [5;50]");
-                    return;
-                }
-                if (txtPhone.Text.Length != 10)
-                {
-                    MessageBox.Show("Please input phone with 10 digits");
-                    return;
-                }
-                if (txtOverview.Text.Length < 5 || txtOverview.Text.Length > 50)
-                {
-                    MessageBox.Show("overview must be in [5;50]");
-                    return;
-                }
-                if (txtMajor.Text.Length < 5 || txtMajor.Text.Length > 50)
-                {
-                    MessageBox.Show("Major must be in [5;50]");
-                    return;
-                }
-                if (cbSkill.CheckedItems.Count == 0)
-                {
-                    MessageBox.Show("Please check at least one skill!");
-                    return;
-                }
-
+                
                 //get inf seeker
                 Seeker seeker = new Seeker
                 {
