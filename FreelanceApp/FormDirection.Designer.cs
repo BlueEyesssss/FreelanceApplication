@@ -35,9 +35,10 @@
             // 
             // buttonCreateHirer
             // 
-            this.buttonCreateHirer.Location = new System.Drawing.Point(252, 212);
+            this.buttonCreateHirer.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonCreateHirer.Location = new System.Drawing.Point(115, 184);
             this.buttonCreateHirer.Name = "buttonCreateHirer";
-            this.buttonCreateHirer.Size = new System.Drawing.Size(75, 23);
+            this.buttonCreateHirer.Size = new System.Drawing.Size(173, 91);
             this.buttonCreateHirer.TabIndex = 0;
             this.buttonCreateHirer.Text = "Hier";
             this.buttonCreateHirer.UseVisualStyleBackColor = true;
@@ -45,9 +46,10 @@
             // 
             // buttonCreateSeeker
             // 
-            this.buttonCreateSeeker.Location = new System.Drawing.Point(390, 214);
+            this.buttonCreateSeeker.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonCreateSeeker.Location = new System.Drawing.Point(472, 186);
             this.buttonCreateSeeker.Name = "buttonCreateSeeker";
-            this.buttonCreateSeeker.Size = new System.Drawing.Size(75, 21);
+            this.buttonCreateSeeker.Size = new System.Drawing.Size(173, 89);
             this.buttonCreateSeeker.TabIndex = 1;
             this.buttonCreateSeeker.Text = "Seeker";
             this.buttonCreateSeeker.UseVisualStyleBackColor = true;
@@ -56,9 +58,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(252, 140);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(36, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 15);
+            this.label1.Size = new System.Drawing.Size(715, 54);
             this.label1.TabIndex = 2;
             this.label1.Text = "Please choose roles you want to create:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -67,7 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 365);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCreateSeeker);
             this.Controls.Add(this.buttonCreateHirer);

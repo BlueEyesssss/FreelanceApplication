@@ -50,6 +50,7 @@
             this.btViewReceivedJob = new System.Windows.Forms.Button();
             this.btViewListJob = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpExpedtedDay = new System.Windows.Forms.TextBox();
             this.txtSkillNeed = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtHirerID = new System.Windows.Forms.TextBox();
@@ -57,7 +58,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btViewProfile = new System.Windows.Forms.Button();
-            this.dtpExpedtedDay = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListJob)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListProposal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReceivedJobList)).BeginInit();
@@ -210,7 +210,7 @@
             // dataGridViewListProposal
             // 
             this.dataGridViewListProposal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewListProposal.Location = new System.Drawing.Point(34, 260);
+            this.dataGridViewListProposal.Location = new System.Drawing.Point(23, 230);
             this.dataGridViewListProposal.Name = "dataGridViewListProposal";
             this.dataGridViewListProposal.RowTemplate.Height = 25;
             this.dataGridViewListProposal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -222,7 +222,7 @@
             // dataGridViewReceivedJobList
             // 
             this.dataGridViewReceivedJobList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewReceivedJobList.Location = new System.Drawing.Point(60, 296);
+            this.dataGridViewReceivedJobList.Location = new System.Drawing.Point(38, 230);
             this.dataGridViewReceivedJobList.Name = "dataGridViewReceivedJobList";
             this.dataGridViewReceivedJobList.RowTemplate.Height = 25;
             this.dataGridViewReceivedJobList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -280,6 +280,13 @@
             this.groupBox1.TabIndex = 56;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Job detail";
+            // 
+            // dtpExpedtedDay
+            // 
+            this.dtpExpedtedDay.Location = new System.Drawing.Point(444, 99);
+            this.dtpExpedtedDay.Name = "dtpExpedtedDay";
+            this.dtpExpedtedDay.Size = new System.Drawing.Size(100, 23);
+            this.dtpExpedtedDay.TabIndex = 62;
             // 
             // txtSkillNeed
             // 
@@ -343,18 +350,11 @@
             this.btViewProfile.UseVisualStyleBackColor = true;
             this.btViewProfile.Click += new System.EventHandler(this.btViewProfile_Click);
             // 
-            // dtpExpedtedDay
-            // 
-            this.dtpExpedtedDay.Location = new System.Drawing.Point(444, 99);
-            this.dtpExpedtedDay.Name = "dtpExpedtedDay";
-            this.dtpExpedtedDay.Size = new System.Drawing.Size(100, 23);
-            this.dtpExpedtedDay.TabIndex = 62;
-            // 
             // FormSeekerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 611);
+            this.ClientSize = new System.Drawing.Size(800, 545);
             this.Controls.Add(this.btViewProfile);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewReceivedJobList);

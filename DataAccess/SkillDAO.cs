@@ -31,6 +31,31 @@ namespace DataAccess
             }
         }
 
+        public bool clearAllSkillSeeker(int seekerid)
+        {
+            bool check = false;
+            try
+            {
+                connect = new SqlConnection(connectionString);
+                if (connect != null)
+                {
+                    connect.Open();
+                    string sql = "delete HasSkill where seekerID =@id";
+                    commad = new SqlCommand(sql, connect);
+                    commad.Parameters.AddWithValue("@id", seekerid);
+                    check = commad.ExecuteNonQuery() > 0 ? true : false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connect.Close();
+            }
+            return check;
+        }
         public List<Skill> GetSkills()
         {
             List<Skill> ListSkill = new List<Skill>();

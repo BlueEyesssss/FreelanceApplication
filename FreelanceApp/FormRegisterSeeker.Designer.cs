@@ -205,14 +205,14 @@
             this.cbSkill.FormattingEnabled = true;
             this.cbSkill.Location = new System.Drawing.Point(482, 29);
             this.cbSkill.Name = "cbSkill";
-            this.cbSkill.Size = new System.Drawing.Size(306, 328);
+            this.cbSkill.Size = new System.Drawing.Size(236, 256);
             this.cbSkill.TabIndex = 45;
             // 
             // FormRegisterSeeker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 375);
+            this.ClientSize = new System.Drawing.Size(729, 306);
             this.Controls.Add(this.cbSkill);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label10);

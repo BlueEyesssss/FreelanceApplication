@@ -55,21 +55,21 @@ namespace FreelanceApp
             this.cbSkill.FormattingEnabled = true;
             this.cbSkill.Location = new System.Drawing.Point(474, 61);
             this.cbSkill.Name = "cbSkill";
-            this.cbSkill.Size = new System.Drawing.Size(306, 328);
+            this.cbSkill.Size = new System.Drawing.Size(226, 256);
             this.cbSkill.TabIndex = 64;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(347, 71);
+            this.txtPhone.Location = new System.Drawing.Point(319, 71);
             this.txtPhone.Mask = "0000000000";
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(100, 23);
+            this.txtPhone.Size = new System.Drawing.Size(130, 23);
             this.txtPhone.TabIndex = 63;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(279, 122);
+            this.label10.Location = new System.Drawing.Point(251, 122);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 15);
             this.label10.TabIndex = 62;
@@ -78,7 +78,7 @@ namespace FreelanceApp
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(279, 79);
+            this.label11.Location = new System.Drawing.Point(251, 79);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 15);
             this.label11.TabIndex = 61;
@@ -128,6 +128,7 @@ namespace FreelanceApp
             // 
             // txtUserName
             // 
+            this.txtUserName.Enabled = false;
             this.txtUserName.Location = new System.Drawing.Point(110, 71);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(100, 23);
@@ -135,15 +136,15 @@ namespace FreelanceApp
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(347, 119);
+            this.txtLocation.Location = new System.Drawing.Point(319, 119);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(100, 23);
+            this.txtLocation.Size = new System.Drawing.Size(130, 23);
             this.txtLocation.TabIndex = 54;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(282, 211);
+            this.label7.Location = new System.Drawing.Point(254, 211);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 15);
             this.label7.TabIndex = 53;
@@ -151,9 +152,9 @@ namespace FreelanceApp
             // 
             // txtMajor
             // 
-            this.txtMajor.Location = new System.Drawing.Point(347, 208);
+            this.txtMajor.Location = new System.Drawing.Point(319, 208);
             this.txtMajor.Name = "txtMajor";
-            this.txtMajor.Size = new System.Drawing.Size(100, 23);
+            this.txtMajor.Size = new System.Drawing.Size(130, 23);
             this.txtMajor.TabIndex = 52;
             // 
             // label8
@@ -175,7 +176,7 @@ namespace FreelanceApp
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(276, 169);
+            this.label4.Location = new System.Drawing.Point(248, 169);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 15);
             this.label4.TabIndex = 49;
@@ -183,9 +184,9 @@ namespace FreelanceApp
             // 
             // txtOverview
             // 
-            this.txtOverview.Location = new System.Drawing.Point(347, 166);
+            this.txtOverview.Location = new System.Drawing.Point(319, 166);
             this.txtOverview.Name = "txtOverview";
-            this.txtOverview.Size = new System.Drawing.Size(100, 23);
+            this.txtOverview.Size = new System.Drawing.Size(130, 23);
             this.txtOverview.TabIndex = 48;
             // 
             // buttonCancel
@@ -196,6 +197,7 @@ namespace FreelanceApp
             this.buttonCancel.TabIndex = 47;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // btUpdate
             // 
@@ -206,12 +208,13 @@ namespace FreelanceApp
             this.btUpdate.TabIndex = 46;
             this.btUpdate.Text = "Update";
             this.btUpdate.UseVisualStyleBackColor = true;
+            this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
             // 
             // FormSeekerProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(737, 366);
             this.Controls.Add(this.cbSkill);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label10);
@@ -232,6 +235,7 @@ namespace FreelanceApp
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.btUpdate);
             this.Name = "FormSeekerProfile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSeekerProfile";
             this.Load += new System.EventHandler(this.FormSeekerProfile_Load);
             this.ResumeLayout(false);

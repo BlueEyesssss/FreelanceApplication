@@ -2174,19 +2174,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Phat\\.nuget\\packages\\": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
+      "projectUniqueName": "D:\\laptrinh-dotnet\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
       "projectName": "FreelanceApp",
-      "projectPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
-      "packagesPath": "C:\\Users\\Phat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\FreelanceApp\\obj\\",
+      "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\FreelanceApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Phat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2200,11 +2200,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
+            "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
             },
-            "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Phat\\Desktop\\github-test\\FreelanceApplication\\DataAccess\\DataAccess.csproj"
+            "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -2236,7 +2236,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }
