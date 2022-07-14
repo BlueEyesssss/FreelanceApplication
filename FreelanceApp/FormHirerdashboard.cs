@@ -239,7 +239,13 @@ namespace FreelanceApp
 
         }
 
+<<<<<<< HEAD
         private void buttonDelete_Click(object sender, EventArgs e)
+=======
+        
+
+        private void buttonDelete_Click_1(object sender, EventArgs e)
+>>>>>>> 43cddf4e833966aeea93bbdcdb007f3af21a236e
         {
             try
             {
@@ -265,6 +271,11 @@ namespace FreelanceApp
                 MessageBox.Show(ex.Message, "Delete a project");
 
             }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 43cddf4e833966aeea93bbdcdb007f3af21a236e
         }
 
 

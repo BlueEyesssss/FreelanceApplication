@@ -257,9 +257,15 @@ namespace DataAccess
                     string sql = "DELETE Project WHERE projectID = @id";
                     commad = new SqlCommand(sql, connect);
                     commad.Parameters.AddWithValue("@id", ProjectID);
+<<<<<<< HEAD
 
 
 
+=======
+                    
+
+                    
+>>>>>>> 43cddf4e833966aeea93bbdcdb007f3af21a236e
                     check = commad.ExecuteNonQuery() > 0 ? true : false;
                 }
             }
