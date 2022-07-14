@@ -87,6 +87,7 @@
             this.dataGridViewAcceptedJob.RowTemplate.Height = 25;
             this.dataGridViewAcceptedJob.Size = new System.Drawing.Size(575, 368);
             this.dataGridViewAcceptedJob.TabIndex = 1;
+            this.dataGridViewAcceptedJob.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAcceptedJob_CellDoubleClick);
             // 
             // button1
             // 
@@ -96,6 +97,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "View Accepted Job";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonViewPostedJob
             // 

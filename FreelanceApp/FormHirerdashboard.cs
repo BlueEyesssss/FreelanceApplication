@@ -18,6 +18,7 @@ namespace FreelanceApp
         public int HirerId; //id cua nguoi hirer dang nhap vao
         IProjectRepository ProjectRepository = new ProjectRepository();
         INeededSkillRepository NeededSkillRepository = new NeededSkillRepository();
+        IProposalRepository ProposalRepository = new ProposalRepository();
         BindingSource source;
         public FormHirerdashboard()
         {
@@ -54,7 +55,8 @@ namespace FreelanceApp
             //        }
             //    }
             //}
-
+            dataGridViewListPostedJob.Visible = true;
+            dataGridViewAcceptedJob.Visible = false;
             LoadPostedProjectList();
 
             //if (listPNotStarted1.Count != 0)
@@ -266,6 +268,37 @@ namespace FreelanceApp
                 MessageBox.Show(ex.Message, "Delete a project");
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridViewListPostedJob.Visible = false;
+            dataGridViewAcceptedJob.Visible = true;
+            dataGridViewAcceptedJob.DataSource = ProposalRepository.getListProposalAcceptedByHirerID(this.HirerId);
+        }
+
+        private void dataGridViewAcceptedJob_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1) return;
+            DataGridViewRow row = dataGridViewAcceptedJob.Rows[e.RowIndex];
+            FormProposalSentOfHirer FormProposalSentOfHirer = new FormProposalSentOfHirer
+            {
+                proposal = new Proposal
+                {
+                    ProposalId = int.Parse(row.Cells[0].Value.ToString()),
+                    ProjectId = int.Parse(row.Cells[1].Value.ToString()),
+                    SeekerId = int.Parse(row.Cells[2].Value.ToString()),
+                    PaymentAmount = decimal.Parse(row.Cells[3].Value.ToString()),
+                    Message = row.Cells[4].Value.ToString(),
+                    Status = row.Cells[5].Value.ToString(),
+                    CreatedDate = DateTime.Parse(row.Cells[6].Value.ToString()),
+                    Project = (Project) row.Cells[6].Value,
+                    Seeker = (Seeker)row.Cells[7].Value,
+
+                },
+            };
+
+            FormProposalSentOfHirer.ShowDialog();
         }
 
 
