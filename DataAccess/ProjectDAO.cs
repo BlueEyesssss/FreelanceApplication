@@ -245,9 +245,38 @@ namespace DataAccess
             return check;
         }
 
+        public bool Delete(int ProjectID)
+        {
+            bool check = false;
+            try
+            {
+                connect = new SqlConnection(connectionString);
+                if (connect != null)
+                {
+                    connect.Open();
+                    string sql = "DELETE Project WHERE projectID = @id";
+                    commad = new SqlCommand(sql, connect);
+                    commad.Parameters.AddWithValue("@id", ProjectID);
+
+
+
+                    check = commad.ExecuteNonQuery() > 0 ? true : false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connect.Close();
+            }
+            return check;
+        }
+
         public bool Update(Project Project)
         {
-            Project temp = GetProjectByProjectID(Project.ProjectId);
+            
             
 
             bool check = false;

@@ -55,7 +55,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(357, 360);
+            this.buttonCancel.Location = new System.Drawing.Point(354, 376);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 75;
@@ -90,7 +90,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(373, 322);
+            this.label6.Location = new System.Drawing.Point(407, 330);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 15);
             this.label6.TabIndex = 71;
@@ -160,14 +160,14 @@
             // 
             // textBoxHIrerName
             // 
-            this.textBoxHIrerName.Location = new System.Drawing.Point(217, 324);
+            this.textBoxHIrerName.Location = new System.Drawing.Point(241, 322);
             this.textBoxHIrerName.Name = "textBoxHIrerName";
             this.textBoxHIrerName.Size = new System.Drawing.Size(100, 23);
             this.textBoxHIrerName.TabIndex = 63;
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.Location = new System.Drawing.Point(431, 319);
+            this.textBoxPhone.Location = new System.Drawing.Point(475, 327);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(100, 23);
             this.textBoxPhone.TabIndex = 62;

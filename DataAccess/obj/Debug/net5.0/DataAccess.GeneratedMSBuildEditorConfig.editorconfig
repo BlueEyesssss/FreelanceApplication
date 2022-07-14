@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = DataAccess
-build_property.ProjectDir = D:\laptrinh-dotnet\FreelanceApplication\DataAccess\
+build_property.ProjectDir = D:\github\FreelanceApplication\DataAccess\

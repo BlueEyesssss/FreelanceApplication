@@ -20,6 +20,8 @@ namespace FreelanceApp
         ISkillRepository SkillRepository = new SkillRepository();
         IProjectRepository ProjectRepository = new ProjectRepository();
         INeededSkillRepository NeededSkillRepository = new NeededSkillRepository();
+        IProposalRepository ProposalRepository = new ProposalRepository();
+
 
         public FormPostedJobDetail()
         {
@@ -28,6 +30,12 @@ namespace FreelanceApp
 
         private void FormPostedJobDetail_Load(object sender, EventArgs e)
         {
+
+            
+            
+            
+
+            
             //hien thi list skill len
             List<Skill> ListSkill = SkillRepository.GetSkills();
             string[] StringListSkill = new string[ListSkill.Count];
@@ -44,16 +52,27 @@ namespace FreelanceApp
 
             if (InsertOrUpdate == false) //co nghia la insert
             {
+                buttonLoad.Visible = false;
+                dateTimePickerCreatedDate.Enabled = false;
+                dataGridViewProposalSent.Visible = false;
                 buttonWithDraw.Visible = false;
                 dateTimePickerCreatedDate.Value = DateTime.UtcNow.Date;
                 dateTimePickerCreatedDate.Enabled = false;
+                label9.Enabled = false;
                 textBoxProjectID.Visible = false;
                 textBoxProjectID.Enabled = false;
 
             }
             else //code cho update
             {
-                
+                List<Proposal> ListProposal = ProposalRepository.getListProposalSentToHirerID(Project.ProjectId);
+                if (ListProposal != null)
+                {
+                    dataGridViewProposalSent.DataSource = ListProposal;
+                }
+
+                textBoxProjectID.Enabled = false;
+                dateTimePickerCreatedDate.Enabled = false;
                 buttonWithDraw.Visible = false;
                 textBoxProjectID.Text = Project.ProjectId.ToString();
                 textBoxProjectName.Text = Project.ProjectName.ToString();
@@ -87,15 +106,15 @@ namespace FreelanceApp
 
 
 
-            
 
 
 
-            
-            
-            
-            
-            
+
+
+
+
+
+
 
         }
 
@@ -183,7 +202,7 @@ namespace FreelanceApp
                 if (InsertOrUpdate == false) {
                     Project Project = new Project
                     {
-                        
+
                         ProjectName = textBoxProjectName.Text,
                         Description = textBoxDescription.Text,
                         HirerId = this.HirerId,
@@ -229,11 +248,11 @@ namespace FreelanceApp
                         this.Close();
 
                     }
-                    
+
 
                 } else //update
                 {
-                    
+
                     Project Project = new Project
                     {
                         ProjectId = int.Parse(textBoxProjectID.Text),
@@ -250,7 +269,7 @@ namespace FreelanceApp
 
                     bool check = ProjectRepository.Update(Project);
                     var selectedSkills = new List<string>();
-                    
+
 
                     bool deleteSkill = NeededSkillRepository.DeleteNeedeSkillByProjectID(Project.ProjectId);// xoa het skill cua 1 project
 
@@ -262,7 +281,7 @@ namespace FreelanceApp
                     }
                     int ProjectId = ProjectRepository.getProjectIDByProject(Project);
                     List<Skill> ListSkill = SkillRepository.GetSkills();
-                    
+
                     foreach (Skill skill in ListSkill)
                     {
                         foreach (String selectedSkill in selectedSkills)
@@ -286,21 +305,6 @@ namespace FreelanceApp
 
                     }
                 }
-
-                
-
-
-
-
-
-
-                
-
-
-
-
-            
-            
             }
             catch (Exception ex)
             {
@@ -327,5 +331,43 @@ namespace FreelanceApp
                 e.Handled = true;
             }
         }
+
+        private void dataGridViewProposalSent_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (e.RowIndex == -1) return;
+            DataGridViewRow row = dataGridViewProposalSent.Rows[e.RowIndex];
+            FormProposalSentOfHirer FormProposalSentOfHirer = new FormProposalSentOfHirer
+            {
+                proposal = new Proposal
+                {
+                    ProposalId = int.Parse(row.Cells[0].Value.ToString()),
+                    ProjectId = int.Parse(row.Cells[1].Value.ToString()),
+                    
+                    
+                    SeekerId = int.Parse(row.Cells[2].Value.ToString()),
+                    PaymentAmount = decimal.Parse(row.Cells[3].Value.ToString()),
+                    Message = row.Cells[4].Value.ToString(),
+                    Status = row.Cells[5].Value.ToString(),
+                    CreatedDate = DateTime.Parse(row.Cells[6].Value.ToString()),
+                },
+            };
+
+            FormProposalSentOfHirer.ShowDialog();
+        }
+
+        private void buttonLoad_Click(object sender, EventArgs e)
+        {
+            List<Proposal> ListProposal = ProposalRepository.getListProposalSentToHirerID(Project.ProjectId);
+            if (ListProposal != null)
+            {
+                dataGridViewProposalSent.DataSource = ListProposal;
+            }
+        }
+
+
+
     }
 }
+
+

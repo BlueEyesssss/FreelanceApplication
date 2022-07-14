@@ -17,6 +17,7 @@ namespace FreelanceApp
     {
         public int HirerId; //id cua nguoi hirer dang nhap vao
         IProjectRepository ProjectRepository = new ProjectRepository();
+        INeededSkillRepository NeededSkillRepository = new NeededSkillRepository();
         BindingSource source;
         public FormHirerdashboard()
         {
@@ -172,34 +173,39 @@ namespace FreelanceApp
             try
             {
 
-                source = new BindingSource();
-                source.DataSource = listPNotStarted1;
-                //
-                textBoxProjectId.DataBindings.Clear();
-                textBoxProjectName.DataBindings.Clear();
-                textBoxDescription.DataBindings.Clear();
-                textBoxLocation.DataBindings.Clear();
-                textBoxPaymentAmount.DataBindings.Clear();
-                textBoxMajor.DataBindings.Clear();
-                textBoxComplexity.DataBindings.Clear();
-                textBoxExpectedDuration.DataBindings.Clear();
-                dateTimePickerCreatedDate.DataBindings.Clear();
+                
+                if (listPNotStarted1.Count != 0)
+                {
+                    source = new BindingSource();
+                    source.DataSource = listPNotStarted1;
+                    //
+                    textBoxProjectId.DataBindings.Clear();
+                    textBoxProjectName.DataBindings.Clear();
+                    textBoxDescription.DataBindings.Clear();
+                    textBoxLocation.DataBindings.Clear();
+                    textBoxPaymentAmount.DataBindings.Clear();
+                    textBoxMajor.DataBindings.Clear();
+                    textBoxComplexity.DataBindings.Clear();
+                    textBoxExpectedDuration.DataBindings.Clear();
+                    dateTimePickerCreatedDate.DataBindings.Clear();
 
 
-                textBoxProjectId.DataBindings.Add("Text", source, "projectID");
-                textBoxProjectName.DataBindings.Add("Text", source, "projectName");
-                textBoxDescription.DataBindings.Add("Text", source, "description");
-                textBoxLocation.DataBindings.Add("Text", source, "location");
-                textBoxPaymentAmount.DataBindings.Add("Text", source, "paymentAmount");
-                textBoxMajor.DataBindings.Add("Text", source, "major");
-                textBoxComplexity.DataBindings.Add("Text", source, "complexity");
-                textBoxExpectedDuration.DataBindings.Add("Text", source, "expectedDuration");
-                dateTimePickerCreatedDate.DataBindings.Add("Text", source, "createdDate");
+                    textBoxProjectId.DataBindings.Add("Text", source, "projectID");
+                    textBoxProjectName.DataBindings.Add("Text", source, "projectName");
+                    textBoxDescription.DataBindings.Add("Text", source, "description");
+                    textBoxLocation.DataBindings.Add("Text", source, "location");
+                    textBoxPaymentAmount.DataBindings.Add("Text", source, "paymentAmount");
+                    textBoxMajor.DataBindings.Add("Text", source, "major");
+                    textBoxComplexity.DataBindings.Add("Text", source, "complexity");
+                    textBoxExpectedDuration.DataBindings.Add("Text", source, "expectedDuration");
+                    dateTimePickerCreatedDate.DataBindings.Add("Text", source, "createdDate");
 
 
 
 
-                dataGridViewListPostedJob.DataSource = source;
+                    dataGridViewListPostedJob.DataSource = source;
+                }
+                
              
 
 
@@ -231,6 +237,34 @@ namespace FreelanceApp
         private void dataGridViewListPostedJob_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var Project = GetProject();
+                DialogResult dialogResult = MessageBox.Show("are you sure you want to delete this project?", "Sure?", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    bool checkNeededSkill = NeededSkillRepository.DeleteNeedeSkillByProjectID(Project.ProjectId);
+                    bool checkDelete = ProjectRepository.Delete(Project.ProjectId);
+                    if (checkNeededSkill & checkDelete)
+                    {
+                        MessageBox.Show("Delee Successfully!");
+                        LoadPostedProjectList();
+                    }
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Delete a project");
+
+            }
         }
 
 

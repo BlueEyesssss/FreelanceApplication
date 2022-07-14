@@ -2155,19 +2155,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
+    "C:\\Users\\Phat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\obj\\",
+      "projectPath": "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\Phat\\.nuget\\packages\\",
+      "outputPath": "D:\\github\\FreelanceApplication\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Phat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2181,8 +2181,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
+            "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
             }
           }
         }
@@ -2217,7 +2217,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

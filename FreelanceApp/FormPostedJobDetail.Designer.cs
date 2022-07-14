@@ -50,6 +50,9 @@
             this.checkedListBoxSkill = new System.Windows.Forms.CheckedListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxProjectID = new System.Windows.Forms.TextBox();
+            this.dataGridViewProposalSent = new System.Windows.Forms.DataGridView();
+            this.buttonLoad = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProposalSent)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -235,11 +238,34 @@
             this.textBoxProjectID.Size = new System.Drawing.Size(100, 23);
             this.textBoxProjectID.TabIndex = 39;
             // 
+            // dataGridViewProposalSent
+            // 
+            this.dataGridViewProposalSent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProposalSent.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridViewProposalSent.Location = new System.Drawing.Point(0, 427);
+            this.dataGridViewProposalSent.Name = "dataGridViewProposalSent";
+            this.dataGridViewProposalSent.RowTemplate.Height = 25;
+            this.dataGridViewProposalSent.Size = new System.Drawing.Size(918, 150);
+            this.dataGridViewProposalSent.TabIndex = 40;
+            this.dataGridViewProposalSent.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProposalSent_CellDoubleClick);
+            // 
+            // buttonLoad
+            // 
+            this.buttonLoad.Location = new System.Drawing.Point(626, 346);
+            this.buttonLoad.Name = "buttonLoad";
+            this.buttonLoad.Size = new System.Drawing.Size(75, 23);
+            this.buttonLoad.TabIndex = 41;
+            this.buttonLoad.Text = "Load";
+            this.buttonLoad.UseVisualStyleBackColor = true;
+            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
+            // 
             // FormPostedJobDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(918, 577);
+            this.Controls.Add(this.buttonLoad);
+            this.Controls.Add(this.dataGridViewProposalSent);
             this.Controls.Add(this.textBoxProjectID);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.checkedListBoxSkill);
@@ -266,6 +292,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPostedJobDetail";
             this.Load += new System.EventHandler(this.FormPostedJobDetail_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProposalSent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +322,7 @@
         private System.Windows.Forms.CheckedListBox checkedListBoxSkill;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxProjectID;
+        private System.Windows.Forms.DataGridView dataGridViewProposalSent;
+        private System.Windows.Forms.Button buttonLoad;
     }
 }
