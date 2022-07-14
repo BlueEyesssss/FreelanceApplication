@@ -60,7 +60,21 @@ namespace FreelanceApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Hirer Hirer = new Hirer
+            {
+                HirerId = int.Parse(textBoxUserID.Text),
+                UserName = textBoxUserName.Text,
+                Password = textBoxPassword.Text,
+                FullName = textBoxFullName.Text,
+                Balance = Decimal.Parse(textBoxBalance.Text),
+                Phone = maskedTextBoxPhone.Text,
+                Location = textBoxLocation.Text,
+            };
+            //bool check = HirerRepository.Update(Hirer); dang lam chua xong
+            //if (check)
+            //{
+            //    MessageBox.Show("Update successfully!");
+            //}
         }
     }
 }
