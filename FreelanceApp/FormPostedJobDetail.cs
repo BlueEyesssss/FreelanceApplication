@@ -162,6 +162,7 @@ namespace FreelanceApp
                 if (Decimal.Parse(textBoxPaymentAmount.Text) < 0 || Decimal.Parse(textBoxPaymentAmount.Text) > 1000)
                 {
                     MessageBox.Show("The value of payment amount must be in [0; 1000]$");
+                    return;
                 }
                 if (textBoxMajor.Text.Length < 5 || textBoxMajor.Text.Length > 50)
                 {

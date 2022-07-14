@@ -19,7 +19,7 @@ namespace FreelanceApp
         IProjectRepository ProjectRepository = new ProjectRepository();
         INeededSkillRepository NeededSkillRepository = new NeededSkillRepository();
         IProposalRepository ProposalRepository = new ProposalRepository();
-        BindingSource source;
+        
         public FormHirerdashboard()
         {
             InitializeComponent();
@@ -137,7 +137,9 @@ namespace FreelanceApp
 
         public void LoadPostedProjectList()
         {
-            List<Project> listP = ProjectRepository.getListProject();
+            BindingSource source;
+            source = new BindingSource();
+            List<Project> listP = ProjectRepository.getListProjectByHirerID(this.HirerId);
 
             List<Project> listPNotStarted = new List<Project>();    //list này đc nhưng mà nó dư 3 att là hirer, needskill, proposal nên xài list dưới
             List<dynamic> listPNotStarted1 = new List<dynamic>();
@@ -177,7 +179,7 @@ namespace FreelanceApp
             {
 
                 
-                if (listPNotStarted1.Count != 0)
+                if (listPNotStarted.Count != 0)
                 {
                     source = new BindingSource();
                     source.DataSource = listPNotStarted1;
@@ -250,6 +252,7 @@ namespace FreelanceApp
                 DialogResult dialogResult = MessageBox.Show("are you sure you want to delete this project?", "Sure?", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
+                    bool checkDeleteProposal = ProposalRepository.deleteAllProposalOfProjectByProjectID(Project.ProjectId);
                     bool checkNeededSkill = NeededSkillRepository.DeleteNeedeSkillByProjectID(Project.ProjectId);
                     bool checkDelete = ProjectRepository.Delete(Project.ProjectId);
                     if (checkNeededSkill & checkDelete)
