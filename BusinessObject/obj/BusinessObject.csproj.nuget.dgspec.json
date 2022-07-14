@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {}
+    "D:\\github2\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {}
   },
   "projects": {
-    "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
+    "D:\\github2\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "D:\\github2\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\obj\\",
+        "projectPath": "D:\\github2\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\Phat\\.nuget\\packages\\",
+        "outputPath": "D:\\github2\\FreelanceApplication\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Phat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

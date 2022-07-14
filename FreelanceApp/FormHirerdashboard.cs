@@ -281,9 +281,9 @@ namespace FreelanceApp
         {
             if (e.RowIndex == -1) return;
             DataGridViewRow row = dataGridViewAcceptedJob.Rows[e.RowIndex];
-            FormProposalSentOfHirer FormProposalSentOfHirer = new FormProposalSentOfHirer
+            FormAcceptedJobDetail FormAcceptedJobDetail = new FormAcceptedJobDetail
             {
-                proposal = new Proposal
+                Proposal = new Proposal
                 {
                     ProposalId = int.Parse(row.Cells[0].Value.ToString()),
                     ProjectId = int.Parse(row.Cells[1].Value.ToString()),
@@ -292,13 +292,13 @@ namespace FreelanceApp
                     Message = row.Cells[4].Value.ToString(),
                     Status = row.Cells[5].Value.ToString(),
                     CreatedDate = DateTime.Parse(row.Cells[6].Value.ToString()),
-                    Project = (Project) row.Cells[6].Value,
-                    Seeker = (Seeker)row.Cells[7].Value,
+                    Project = (Project)row.Cells[7].Value,
+                    Seeker = (Seeker)row.Cells[8].Value,
 
                 },
             };
 
-            FormProposalSentOfHirer.ShowDialog();
+            FormAcceptedJobDetail.ShowDialog();
         }
 
 

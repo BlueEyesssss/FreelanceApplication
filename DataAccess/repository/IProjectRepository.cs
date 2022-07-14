@@ -21,5 +21,7 @@ namespace DataAccess.repository
         string getSkillProjectNeed(int projectid);
 
         bool Delete(int ProjectID);
+
+        List<Project> getListProjectByHirerID(int HirerID);
     }
 }

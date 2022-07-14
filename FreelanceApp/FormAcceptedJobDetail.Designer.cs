@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.dateTimePickerCreateDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerCreatedDate = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -39,18 +39,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBoxHIrerName = new System.Windows.Forms.TextBox();
+            this.textBoxDescription = new System.Windows.Forms.TextBox();
+            this.textBoxSeekerName = new System.Windows.Forms.TextBox();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxLocation = new System.Windows.Forms.TextBox();
+            this.textBoxExpectedDuration = new System.Windows.Forms.TextBox();
+            this.textBoxMajor = new System.Windows.Forms.TextBox();
+            this.textBoxComplexity = new System.Windows.Forms.TextBox();
+            this.textBoxProjectName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxMessage = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPaymentAmount = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonCancel
@@ -61,13 +61,14 @@
             this.buttonCancel.TabIndex = 75;
             this.buttonCancel.Text = "Close";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click_1);
             // 
-            // dateTimePickerCreateDate
+            // dateTimePickerCreatedDate
             // 
-            this.dateTimePickerCreateDate.Location = new System.Drawing.Point(475, 233);
-            this.dateTimePickerCreateDate.Name = "dateTimePickerCreateDate";
-            this.dateTimePickerCreateDate.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePickerCreateDate.TabIndex = 74;
+            this.dateTimePickerCreatedDate.Location = new System.Drawing.Point(475, 233);
+            this.dateTimePickerCreatedDate.Name = "dateTimePickerCreatedDate";
+            this.dateTimePickerCreatedDate.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePickerCreatedDate.TabIndex = 74;
             // 
             // label8
             // 
@@ -151,19 +152,19 @@
             this.label10.TabIndex = 65;
             this.label10.Text = "Project name";
             // 
-            // textBox9
+            // textBoxDescription
             // 
-            this.textBox9.Location = new System.Drawing.Point(241, 201);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 23);
-            this.textBox9.TabIndex = 64;
+            this.textBoxDescription.Location = new System.Drawing.Point(241, 201);
+            this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.Size = new System.Drawing.Size(100, 23);
+            this.textBoxDescription.TabIndex = 64;
             // 
-            // textBoxHIrerName
+            // textBoxSeekerName
             // 
-            this.textBoxHIrerName.Location = new System.Drawing.Point(241, 322);
-            this.textBoxHIrerName.Name = "textBoxHIrerName";
-            this.textBoxHIrerName.Size = new System.Drawing.Size(100, 23);
-            this.textBoxHIrerName.TabIndex = 63;
+            this.textBoxSeekerName.Location = new System.Drawing.Point(241, 322);
+            this.textBoxSeekerName.Name = "textBoxSeekerName";
+            this.textBoxSeekerName.Size = new System.Drawing.Size(100, 23);
+            this.textBoxSeekerName.TabIndex = 63;
             // 
             // textBoxPhone
             // 
@@ -172,40 +173,40 @@
             this.textBoxPhone.Size = new System.Drawing.Size(100, 23);
             this.textBoxPhone.TabIndex = 62;
             // 
-            // textBox8
+            // textBoxLocation
             // 
-            this.textBox8.Location = new System.Drawing.Point(241, 271);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 23);
-            this.textBox8.TabIndex = 61;
+            this.textBoxLocation.Location = new System.Drawing.Point(241, 271);
+            this.textBoxLocation.Name = "textBoxLocation";
+            this.textBoxLocation.Size = new System.Drawing.Size(100, 23);
+            this.textBoxLocation.TabIndex = 61;
             // 
-            // textBox5
+            // textBoxExpectedDuration
             // 
-            this.textBox5.Location = new System.Drawing.Point(475, 152);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 60;
+            this.textBoxExpectedDuration.Location = new System.Drawing.Point(475, 152);
+            this.textBoxExpectedDuration.Name = "textBoxExpectedDuration";
+            this.textBoxExpectedDuration.Size = new System.Drawing.Size(100, 23);
+            this.textBoxExpectedDuration.TabIndex = 60;
             // 
-            // textBox3
+            // textBoxMajor
             // 
-            this.textBox3.Location = new System.Drawing.Point(475, 57);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 59;
+            this.textBoxMajor.Location = new System.Drawing.Point(475, 57);
+            this.textBoxMajor.Name = "textBoxMajor";
+            this.textBoxMajor.Size = new System.Drawing.Size(100, 23);
+            this.textBoxMajor.TabIndex = 59;
             // 
-            // textBox2
+            // textBoxComplexity
             // 
-            this.textBox2.Location = new System.Drawing.Point(475, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 58;
+            this.textBoxComplexity.Location = new System.Drawing.Point(475, 123);
+            this.textBoxComplexity.Name = "textBoxComplexity";
+            this.textBoxComplexity.Size = new System.Drawing.Size(100, 23);
+            this.textBoxComplexity.TabIndex = 58;
             // 
-            // textBox4
+            // textBoxProjectName
             // 
-            this.textBox4.Location = new System.Drawing.Point(241, 135);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 57;
+            this.textBoxProjectName.Location = new System.Drawing.Point(241, 135);
+            this.textBoxProjectName.Name = "textBoxProjectName";
+            this.textBoxProjectName.Size = new System.Drawing.Size(100, 23);
+            this.textBoxProjectName.TabIndex = 57;
             // 
             // label2
             // 
@@ -232,12 +233,12 @@
             this.textBoxMessage.Size = new System.Drawing.Size(100, 23);
             this.textBoxMessage.TabIndex = 53;
             // 
-            // textBox1
+            // textBoxPaymentAmount
             // 
-            this.textBox1.Location = new System.Drawing.Point(241, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 54;
+            this.textBoxPaymentAmount.Location = new System.Drawing.Point(241, 93);
+            this.textBoxPaymentAmount.Name = "textBoxPaymentAmount";
+            this.textBoxPaymentAmount.Size = new System.Drawing.Size(100, 23);
+            this.textBoxPaymentAmount.TabIndex = 54;
             // 
             // FormAcceptedJobDetail
             // 
@@ -245,7 +246,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonCancel);
-            this.Controls.Add(this.dateTimePickerCreateDate);
+            this.Controls.Add(this.dateTimePickerCreatedDate);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label6);
@@ -255,21 +256,22 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBoxHIrerName);
+            this.Controls.Add(this.textBoxDescription);
+            this.Controls.Add(this.textBoxSeekerName);
             this.Controls.Add(this.textBoxPhone);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxLocation);
+            this.Controls.Add(this.textBoxExpectedDuration);
+            this.Controls.Add(this.textBoxMajor);
+            this.Controls.Add(this.textBoxComplexity);
+            this.Controls.Add(this.textBoxProjectName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxMessage);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPaymentAmount);
             this.Name = "FormAcceptedJobDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAcceptedJobDetail";
+            this.Load += new System.EventHandler(this.FormAcceptedJobDetail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,7 +280,7 @@
         #endregion
 
         private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.DateTimePicker dateTimePickerCreateDate;
+        private System.Windows.Forms.DateTimePicker dateTimePickerCreatedDate;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;
@@ -288,17 +290,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBoxHIrerName;
+        private System.Windows.Forms.TextBox textBoxDescription;
+        private System.Windows.Forms.TextBox textBoxSeekerName;
         private System.Windows.Forms.TextBox textBoxPhone;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxLocation;
+        private System.Windows.Forms.TextBox textBoxExpectedDuration;
+        private System.Windows.Forms.TextBox textBoxMajor;
+        private System.Windows.Forms.TextBox textBoxComplexity;
+        private System.Windows.Forms.TextBox textBoxProjectName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxMessage;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPaymentAmount;
     }
 }

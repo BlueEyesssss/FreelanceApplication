@@ -23,5 +23,7 @@ namespace DataAccess.repository
         public string getSkillProjectNeed(int projectid) => ProjectDAO.Instance.getSkillProjectNeed(projectid);
 
         public bool Delete(int ProjectID) => ProjectDAO.Instance.Delete(ProjectID);
+
+        public List<Project> getListProjectByHirerID(int HirerID) => ProjectDAO.Instance.getListProjectByHirerID(HirerID);
     }
 }

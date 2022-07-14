@@ -26,5 +26,7 @@ namespace DataAccess.repository
         public bool Update(Proposal Proposal, string status) => ProposalDAO.Instance.Update(Proposal, status);
 
         public List<Proposal> getListProposalAcceptedByHirerID(int HirerID) => ProposalDAO.Instance.getListProposalAcceptedByHirerID(HirerID);
+
+        public bool deleteAllProposalOfProjectByProjectID(int ProjectID) => ProposalDAO.Instance.deleteAllProposalOfProjectByProjectID(ProjectID);
     }
 }

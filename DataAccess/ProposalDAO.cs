@@ -30,6 +30,35 @@ namespace DataAccess
                 return instance;
             }
         }
+
+        public bool deleteAllProposalOfProjectByProjectID(int ProjectID)
+        {
+            bool check = false;
+            try
+            {
+                connect = new SqlConnection(connectionString);
+                if (connect != null)
+                {
+                    connect.Open();
+                    string sql = "delete Proposal " +
+                        "where projectID = @projectID";
+                    commad = new SqlCommand(sql, connect);
+                    commad.Parameters.AddWithValue("@projectID", ProjectID);
+
+                    check = commad.ExecuteNonQuery() > 0 ? true : false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connect.Close();
+            }
+            return check;
+        }
+
         public List<Proposal> getListSubmitedProposal(int seekerid)
         {
             List<Proposal> listP = new List<Proposal>();

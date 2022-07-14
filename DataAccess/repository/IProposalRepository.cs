@@ -23,5 +23,7 @@ namespace DataAccess.repository
 
         List<Proposal> getListProposalAcceptedByHirerID(int HirerID);
 
+        bool deleteAllProposalOfProjectByProjectID(int ProjectID);
+
     }
 }

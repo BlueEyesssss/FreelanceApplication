@@ -206,6 +206,52 @@ namespace DataAccess
             return Project;
         }
 
+        public List<Project> getListProjectByHirerID(int HirerID)
+        {
+            List<Project> listP = new List<Project>();
+            try
+            {
+                connect = new SqlConnection(connectionString);
+                if (connect != null)
+                {
+                    connect.Open();
+                    string sql = "select projectID, projectName, description, hirerID, location, paymentAmount, major, complexity, expectedDuration, createdDate " +
+                        "from Project where hirerID = @id";
+                    commad = new SqlCommand(sql, connect);
+                    commad.Parameters.AddWithValue("@id", HirerID);
+                    reader = commad.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            listP.Add(new Project
+                            {
+                                ProjectId = reader.GetInt32(0),
+                                ProjectName = reader.GetString(1),
+                                Description = reader.GetString(2),
+                                HirerId = reader.GetInt32(3),
+                                Location = reader.GetString(4),
+                                PaymentAmount = reader.GetDecimal(5),
+                                Major = reader.GetString(6),
+                                Complexity = reader.GetString(7),
+                                ExpectedDuration = reader.GetString(8),
+                                CreatedDate = reader.GetDateTime(9)
+                            });
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connect.Close();
+            }
+            return listP;
+        }
+
         public string getSkillProjectNeed(int projectid)
         {
             string check = null;
