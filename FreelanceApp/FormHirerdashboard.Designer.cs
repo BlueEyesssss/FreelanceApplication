@@ -52,6 +52,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.buttonDelete = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListPostedJob)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAcceptedJob)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +71,7 @@
             // 
             // buttonPostAJob
             // 
-            this.buttonPostAJob.Location = new System.Drawing.Point(883, 30);
+            this.buttonPostAJob.Location = new System.Drawing.Point(883, 143);
             this.buttonPostAJob.Name = "buttonPostAJob";
             this.buttonPostAJob.Size = new System.Drawing.Size(159, 23);
             this.buttonPostAJob.TabIndex = 2;
@@ -91,7 +92,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(883, 160);
+            this.button1.Location = new System.Drawing.Point(883, 245);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 23);
             this.button1.TabIndex = 2;
@@ -101,7 +102,7 @@
             // 
             // buttonViewPostedJob
             // 
-            this.buttonViewPostedJob.Location = new System.Drawing.Point(883, 106);
+            this.buttonViewPostedJob.Location = new System.Drawing.Point(883, 195);
             this.buttonViewPostedJob.Name = "buttonViewPostedJob";
             this.buttonViewPostedJob.Size = new System.Drawing.Size(159, 23);
             this.buttonViewPostedJob.TabIndex = 2;
@@ -265,7 +266,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(883, 214);
+            this.buttonDelete.Location = new System.Drawing.Point(883, 297);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(159, 23);
             this.buttonDelete.TabIndex = 23;
@@ -273,11 +274,22 @@
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(883, 30);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(159, 23);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "My Profile";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormHirerdashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1074, 620);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -338,5 +350,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button button2;
     }
 }

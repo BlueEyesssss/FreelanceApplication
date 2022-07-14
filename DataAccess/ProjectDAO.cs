@@ -321,10 +321,7 @@ namespace DataAccess
         }
 
         public bool Update(Project Project)
-        {
-            
-            
-
+        {     
             bool check = false;
             try
             {

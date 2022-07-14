@@ -411,3 +411,4 @@ D:\github2\FreelanceApplication\FreelanceApp\obj\Debug\net5.0-windows\refint\Fre
 D:\github2\FreelanceApplication\FreelanceApp\obj\Debug\net5.0-windows\FreelanceApp.pdb
 D:\github2\FreelanceApplication\FreelanceApp\obj\Debug\net5.0-windows\FreelanceApp.genruntimeconfig.cache
 D:\github2\FreelanceApplication\FreelanceApp\obj\Debug\net5.0-windows\ref\FreelanceApp.dll
+D:\github2\FreelanceApplication\FreelanceApp\obj\Debug\net5.0-windows\FreelanceApp.FormHirerProfile.resources

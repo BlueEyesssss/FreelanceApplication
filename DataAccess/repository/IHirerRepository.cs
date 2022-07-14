@@ -16,5 +16,7 @@ namespace DataAccess.repository
         bool checkDuplicateuserName(string UserName);
 
         List<Hirer> GetHirers();
+
+        Hirer GetHirerByHirerID(int HirerID);
     }
 }

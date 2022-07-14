@@ -19,6 +19,8 @@ namespace DataAccess.repository
 
         public List<Hirer> GetHirers() => UserDAO.Instance.getListHirer();
 
+        public Hirer GetHirerByHirerID(int HirerID) => HirerDAO.Instance.GetHirerByHirerID(HirerID);
+
 
     }
 }

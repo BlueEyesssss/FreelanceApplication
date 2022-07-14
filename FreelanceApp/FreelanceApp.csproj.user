@@ -16,6 +16,9 @@
     <Compile Update="FormHirerdashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormHirerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>

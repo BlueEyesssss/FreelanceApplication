@@ -298,6 +298,15 @@ namespace FreelanceApp
             FormAcceptedJobDetail.ShowDialog();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormHirerProfile FormHirerProfile = new FormHirerProfile
+            {
+                HirerId = this.HirerId,
+            };
+            FormHirerProfile.ShowDialog();
+        }
+
 
 
         //private void dataGridViewListPostedJob_CellClick(object sender, DataGridViewCellEventArgs e)
