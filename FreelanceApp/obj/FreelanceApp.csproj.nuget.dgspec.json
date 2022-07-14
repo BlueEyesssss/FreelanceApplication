@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj": {}
+    "D:\\laptrinh-dotnet\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj": {}
   },
   "projects": {
-    "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
+    "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\Phat\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\FreelanceApplication\\BusinessObject\\obj\\",
+        "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Phat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,21 +66,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj": {
+    "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Phat\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\FreelanceApplication\\DataAccess\\obj\\",
+        "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Phat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,8 +94,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
+              "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
               }
             }
           }
@@ -130,21 +130,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\github\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj": {
+    "D:\\laptrinh-dotnet\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
+        "projectUniqueName": "D:\\laptrinh-dotnet\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
         "projectName": "FreelanceApp",
-        "projectPath": "D:\\github\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
-        "packagesPath": "C:\\Users\\Phat\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\FreelanceApplication\\FreelanceApp\\obj\\",
+        "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\FreelanceApp\\FreelanceApp.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\FreelanceApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Phat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,11 +158,11 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "D:\\github\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
+              "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\BusinessObject\\BusinessObject.csproj"
               },
-              "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\github\\FreelanceApplication\\DataAccess\\DataAccess.csproj"
+              "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\laptrinh-dotnet\\FreelanceApplication\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -194,7 +194,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }

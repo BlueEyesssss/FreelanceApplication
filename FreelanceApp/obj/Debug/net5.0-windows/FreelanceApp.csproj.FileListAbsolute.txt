@@ -340,3 +340,4 @@ C:\Users\Phat\Desktop\github-test\FreelanceApplication\FreelanceApp\obj\Debug\ne
 C:\Users\Phat\Desktop\github-test\FreelanceApplication\FreelanceApp\obj\Debug\net5.0-windows\ref\FreelanceApp.dll
 D:\laptrinh-dotnet\FreelanceApplication\FreelanceApp\obj\Debug\net5.0-windows\FreelanceApp.FormSeekerProfile.resources
 D:\github\FreelanceApplication\FreelanceApp\obj\Debug\net5.0-windows\FreelanceApp.FormProposalSentOfHirer.resources
+D:\laptrinh-dotnet\FreelanceApplication\FreelanceApp\obj\Debug\net5.0-windows\FreelanceApp.FormProposalSentOfHirer.resources

@@ -305,9 +305,66 @@ namespace FreelanceApp
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show(ex.Message, "ViewProfile");
                 }
             }
 
+        }
+
+        private void btSearchName_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                clearField();
+                dataGridViewListJob.Visible = true;
+                dataGridViewListProposal.Visible = false;
+                dataGridViewReceivedJobList.Visible = false;
+
+                if (txtSearchName.Text == null) return;
+                //get list project
+                List<Project> listP = projectRepository.getListProject();
+                dynamic listResult;
+                if (listP != null)
+                {
+                    //get list job not started
+                    List<Project> listPNotStarted = new List<Project>();    //list này đc nhưng mà nó dư 3 att là hirer, needskill, proposal nên xài list dưới
+                    List<dynamic> listPNotStarted1 = new List<dynamic>();
+                    foreach (var item in listP)
+                    {
+                        if (projectRepository.checkProjectStarted(item.ProjectId) == false)
+                        {
+                            listPNotStarted.Add(item);
+                            listPNotStarted1.Add(new
+                            {
+                                ProjectId = item.ProjectId,
+                                ProjectName = item.ProjectName,
+                                Description = item.Description,
+                                HirerId = item.HirerId,
+                                Location = item.Location,
+                                PaymentAmount = item.PaymentAmount,
+                                Major = item.Major,
+                                Complexity = item.Complexity,
+                                ExpectedDuration = item.ExpectedDuration,
+                                CreatedDate = item.CreatedDate
+                            });
+                        }
+                    }
+
+                    var listR = from project in listPNotStarted
+                                where project.ProjectName.Contains(txtSearchName.Text)
+                                select project;
+                    if (listR != null)
+                    {
+                        listResult = listR.ToList();
+                        dataGridViewListJob.DataSource = null;
+                        dataGridViewListJob.DataSource = listResult;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "search project by name");
+            }
         }
     }
 }        

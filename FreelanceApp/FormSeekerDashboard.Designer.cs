@@ -58,6 +58,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btViewProfile = new System.Windows.Forms.Button();
+            this.btSearchName = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtSearchName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListJob)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListProposal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReceivedJobList)).BeginInit();
@@ -67,7 +70,7 @@
             // dataGridViewListJob
             // 
             this.dataGridViewListJob.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewListJob.Location = new System.Drawing.Point(12, 230);
+            this.dataGridViewListJob.Location = new System.Drawing.Point(12, 296);
             this.dataGridViewListJob.Name = "dataGridViewListJob";
             this.dataGridViewListJob.RowTemplate.Height = 25;
             this.dataGridViewListJob.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -78,7 +81,7 @@
             // 
             // btViewSubmitedProposal
             // 
-            this.btViewSubmitedProposal.Location = new System.Drawing.Point(567, 296);
+            this.btViewSubmitedProposal.Location = new System.Drawing.Point(563, 384);
             this.btViewSubmitedProposal.Name = "btViewSubmitedProposal";
             this.btViewSubmitedProposal.Size = new System.Drawing.Size(180, 23);
             this.btViewSubmitedProposal.TabIndex = 2;
@@ -210,7 +213,7 @@
             // dataGridViewListProposal
             // 
             this.dataGridViewListProposal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewListProposal.Location = new System.Drawing.Point(23, 230);
+            this.dataGridViewListProposal.Location = new System.Drawing.Point(23, 296);
             this.dataGridViewListProposal.Name = "dataGridViewListProposal";
             this.dataGridViewListProposal.RowTemplate.Height = 25;
             this.dataGridViewListProposal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -222,7 +225,7 @@
             // dataGridViewReceivedJobList
             // 
             this.dataGridViewReceivedJobList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewReceivedJobList.Location = new System.Drawing.Point(38, 230);
+            this.dataGridViewReceivedJobList.Location = new System.Drawing.Point(38, 296);
             this.dataGridViewReceivedJobList.Name = "dataGridViewReceivedJobList";
             this.dataGridViewReceivedJobList.RowTemplate.Height = 25;
             this.dataGridViewReceivedJobList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -232,7 +235,7 @@
             // 
             // btViewReceivedJob
             // 
-            this.btViewReceivedJob.Location = new System.Drawing.Point(567, 357);
+            this.btViewReceivedJob.Location = new System.Drawing.Point(563, 445);
             this.btViewReceivedJob.Name = "btViewReceivedJob";
             this.btViewReceivedJob.Size = new System.Drawing.Size(180, 23);
             this.btViewReceivedJob.TabIndex = 53;
@@ -242,7 +245,7 @@
             // 
             // btViewListJob
             // 
-            this.btViewListJob.Location = new System.Drawing.Point(567, 230);
+            this.btViewListJob.Location = new System.Drawing.Point(563, 318);
             this.btViewListJob.Name = "btViewListJob";
             this.btViewListJob.Size = new System.Drawing.Size(180, 23);
             this.btViewListJob.TabIndex = 2;
@@ -342,7 +345,7 @@
             // 
             // btViewProfile
             // 
-            this.btViewProfile.Location = new System.Drawing.Point(567, 421);
+            this.btViewProfile.Location = new System.Drawing.Point(563, 509);
             this.btViewProfile.Name = "btViewProfile";
             this.btViewProfile.Size = new System.Drawing.Size(180, 23);
             this.btViewProfile.TabIndex = 57;
@@ -350,11 +353,40 @@
             this.btViewProfile.UseVisualStyleBackColor = true;
             this.btViewProfile.Click += new System.EventHandler(this.btViewProfile_Click);
             // 
+            // btSearchName
+            // 
+            this.btSearchName.Location = new System.Drawing.Point(334, 241);
+            this.btSearchName.Name = "btSearchName";
+            this.btSearchName.Size = new System.Drawing.Size(75, 23);
+            this.btSearchName.TabIndex = 63;
+            this.btSearchName.Text = "Search";
+            this.btSearchName.UseVisualStyleBackColor = true;
+            this.btSearchName.Click += new System.EventHandler(this.btSearchName_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(60, 245);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(75, 15);
+            this.label12.TabIndex = 62;
+            this.label12.Text = "Search name";
+            // 
+            // txtSearchName
+            // 
+            this.txtSearchName.Location = new System.Drawing.Point(143, 242);
+            this.txtSearchName.Name = "txtSearchName";
+            this.txtSearchName.Size = new System.Drawing.Size(185, 23);
+            this.txtSearchName.TabIndex = 61;
+            // 
             // FormSeekerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 545);
+            this.ClientSize = new System.Drawing.Size(800, 609);
+            this.Controls.Add(this.btSearchName);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtSearchName);
             this.Controls.Add(this.btViewProfile);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewReceivedJobList);
@@ -373,6 +405,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -408,5 +441,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btViewProfile;
         private System.Windows.Forms.TextBox dtpExpedtedDay;
+        private System.Windows.Forms.Button btSearchName;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtSearchName;
     }
 }
