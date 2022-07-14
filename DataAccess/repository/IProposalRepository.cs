@@ -21,5 +21,7 @@ namespace DataAccess.repository
 
         bool Update(Proposal Proposal, string status);
 
+        List<Proposal> getListProposalAcceptedByHirerID(int HirerID);
+
     }
 }

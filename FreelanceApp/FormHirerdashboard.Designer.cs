@@ -51,10 +51,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
-            this.buttonLoad = new System.Windows.Forms.Button();
-=======
->>>>>>> 43cddf4e833966aeea93bbdcdb007f3af21a236e
             this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListPostedJob)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAcceptedJob)).BeginInit();
@@ -267,16 +263,6 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(956, 342);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
-            this.buttonDelete.TabIndex = 22;
-            this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click_1);
-            // 
-            // buttonDelete
-            // 
             this.buttonDelete.Location = new System.Drawing.Point(924, 354);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 23);
@@ -291,10 +277,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1074, 620);
             this.Controls.Add(this.buttonDelete);
-<<<<<<< HEAD
-            this.Controls.Add(this.buttonLoad);
-=======
->>>>>>> 43cddf4e833966aeea93bbdcdb007f3af21a236e
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -353,10 +335,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-<<<<<<< HEAD
-        private System.Windows.Forms.Button buttonLoad;
-=======
->>>>>>> 43cddf4e833966aeea93bbdcdb007f3af21a236e
         private System.Windows.Forms.Button buttonDelete;
     }
 }
