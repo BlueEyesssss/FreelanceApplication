@@ -71,11 +71,8 @@ namespace FreelanceApp
                     {
                         seekerid = Seeker.SeekerId,
                     };
-
+                    textBoxPassword.Text = string.Empty;
                     FormSeekerDashboard.ShowDialog();
-                    this.Close();
-
-
                 }
             }
 
@@ -86,6 +83,11 @@ namespace FreelanceApp
                 
             }
 
+
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
 
         }
     }

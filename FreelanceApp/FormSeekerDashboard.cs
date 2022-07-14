@@ -366,6 +366,115 @@ namespace FreelanceApp
                 MessageBox.Show(ex.Message, "search project by name");
             }
         }
+
+        private void btSearchBaseSkill_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                clearField();
+                dataGridViewListJob.Visible = true;
+                dataGridViewListProposal.Visible = false;
+                dataGridViewReceivedJobList.Visible = false;
+                //get list project
+                List<Project> listP = projectRepository.getListProject();
+                if (listP != null)
+                {
+                    //get list job not started
+                    List<Project> listPNotStarted = new List<Project>();    //list này đc nhưng mà nó dư 3 att là hirer, needskill, proposal nên xài list dưới
+                    List<ProjectHasSkill> listPNotStarted1 = new List<ProjectHasSkill>();
+                    foreach (var item in listP)
+                    {
+                        if (projectRepository.checkProjectStarted(item.ProjectId) == false)
+                        {
+                            listPNotStarted.Add(item);
+                            listPNotStarted1.Add(new ProjectHasSkill
+                            {
+                                ProjectId = item.ProjectId,
+                                ProjectName = item.ProjectName,
+                                Description = item.Description,
+                                HirerId = item.HirerId,
+                                Location = item.Location,
+                                PaymentAmount = item.PaymentAmount,
+                                Major = item.Major,
+                                Complexity = item.Complexity,
+                                ExpectedDuration = item.ExpectedDuration,
+                                CreatedDate = item.CreatedDate,
+                                SkillNeed = projectRepository.getSkillProjectNeed(item.ProjectId),
+                                matchSkill = 0
+                        });
+                        }
+                    }
+                    //get skill seeker has
+                    SeekerRepository seekerRepository = new SeekerRepository();
+                    List<string> listSkillSeekerHas = seekerRepository.getSkillSeekerHas(seekerid);
+
+                    //matching skill
+                    //duyet list skill project
+                    foreach (var item in listPNotStarted1)
+                    {
+                        if(item.SkillNeed == null)
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            //duyệt list skill của seeker
+                            foreach (var skillSeeker in listSkillSeekerHas)
+                            {
+                                if (item.SkillNeed.Contains(skillSeeker))
+                                {
+                                    item.matchSkill += 1;
+                                }
+                            }
+                        }
+                        
+                    }
+
+                    //sort lại ist skill match
+                    for (int i = 0; i < listPNotStarted1.Count; i++)
+                    {
+                        for (int j = i + 1; j < listPNotStarted1.Count; j++)
+                        {
+                            if(listPNotStarted1[i].matchSkill < listPNotStarted1[j].matchSkill)
+                            {
+                                var tmp = listPNotStarted1[i];
+                                listPNotStarted1[i] = listPNotStarted1[j];
+                                listPNotStarted1[j] = tmp;
+                            }
+                        }
+                    }
+
+                    dataGridViewListJob.DataSource = null;
+                    dataGridViewListJob.DataSource = listPNotStarted1;
+                }
+                else
+                {
+                    MessageBox.Show("no job not started", "View list job");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Search Base Skill");
+            }
+        }
+
+        private void btLogout_Click(object sender, EventArgs e)
+        {
+            
+            //FormLogin formLogin = new FormLogin();
+            //formLogin.Show();
+            this.Close();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }        
 

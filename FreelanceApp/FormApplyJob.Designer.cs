@@ -39,27 +39,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(119, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 15);
+            this.label1.Size = new System.Drawing.Size(67, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Message";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(73, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 15);
+            this.label2.Size = new System.Drawing.Size(120, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Payment amount";
             // 
             // btApplying
             // 
             this.btApplying.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btApplying.Location = new System.Drawing.Point(168, 168);
+            this.btApplying.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btApplying.Location = new System.Drawing.Point(140, 175);
             this.btApplying.Name = "btApplying";
-            this.btApplying.Size = new System.Drawing.Size(75, 23);
+            this.btApplying.Size = new System.Drawing.Size(102, 34);
             this.btApplying.TabIndex = 2;
             this.btApplying.Text = "Applying";
             this.btApplying.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@
             // 
             // btCancel
             // 
-            this.btCancel.Location = new System.Drawing.Point(360, 167);
+            this.btCancel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btCancel.Location = new System.Drawing.Point(319, 175);
             this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(75, 23);
+            this.btCancel.Size = new System.Drawing.Size(102, 34);
             this.btCancel.TabIndex = 3;
             this.btCancel.Text = "Cancel";
             this.btCancel.UseVisualStyleBackColor = true;
@@ -77,23 +81,25 @@
             // 
             // txtMessage
             // 
+            this.txtMessage.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMessage.Location = new System.Drawing.Point(194, 67);
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(241, 23);
+            this.txtMessage.Size = new System.Drawing.Size(268, 27);
             this.txtMessage.TabIndex = 4;
             // 
             // txtPaymentAmount
             // 
+            this.txtPaymentAmount.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPaymentAmount.Location = new System.Drawing.Point(194, 116);
             this.txtPaymentAmount.Name = "txtPaymentAmount";
-            this.txtPaymentAmount.Size = new System.Drawing.Size(100, 23);
+            this.txtPaymentAmount.Size = new System.Drawing.Size(127, 27);
             this.txtPaymentAmount.TabIndex = 5;
             // 
             // FormApplyJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 288);
+            this.ClientSize = new System.Drawing.Size(570, 264);
             this.Controls.Add(this.txtPaymentAmount);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.btCancel);

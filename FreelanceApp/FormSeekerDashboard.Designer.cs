@@ -61,6 +61,8 @@
             this.btSearchName = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.txtSearchName = new System.Windows.Forms.TextBox();
+            this.btSearchBaseSkill = new System.Windows.Forms.Button();
+            this.btLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListJob)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListProposal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReceivedJobList)).BeginInit();
@@ -81,9 +83,10 @@
             // 
             // btViewSubmitedProposal
             // 
-            this.btViewSubmitedProposal.Location = new System.Drawing.Point(563, 384);
+            this.btViewSubmitedProposal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btViewSubmitedProposal.Location = new System.Drawing.Point(563, 373);
             this.btViewSubmitedProposal.Name = "btViewSubmitedProposal";
-            this.btViewSubmitedProposal.Size = new System.Drawing.Size(180, 23);
+            this.btViewSubmitedProposal.Size = new System.Drawing.Size(180, 34);
             this.btViewSubmitedProposal.TabIndex = 2;
             this.btViewSubmitedProposal.Text = "View submited proposal";
             this.btViewSubmitedProposal.UseVisualStyleBackColor = true;
@@ -91,123 +94,140 @@
             // 
             // dtpCreateday
             // 
-            this.dtpCreateday.Location = new System.Drawing.Point(444, 138);
+            this.dtpCreateday.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpCreateday.Location = new System.Drawing.Point(461, 137);
             this.dtpCreateday.Name = "dtpCreateday";
-            this.dtpCreateday.Size = new System.Drawing.Size(200, 23);
+            this.dtpCreateday.Size = new System.Drawing.Size(200, 27);
             this.dtpCreateday.TabIndex = 51;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(45, 65);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(43, 65);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 15);
+            this.label8.Size = new System.Drawing.Size(85, 20);
             this.label8.TabIndex = 50;
             this.label8.Text = "Description";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(62, 99);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(65, 105);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 15);
+            this.label7.Size = new System.Drawing.Size(63, 20);
             this.label7.TabIndex = 49;
             this.label7.Text = "location";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 138);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(8, 138);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 15);
+            this.label6.Size = new System.Drawing.Size(122, 20);
             this.label6.TabIndex = 48;
             this.label6.Text = "payment amount";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(400, 25);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(398, 29);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 15);
+            this.label5.Size = new System.Drawing.Size(48, 20);
             this.label5.TabIndex = 47;
             this.label5.Text = "major";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(372, 70);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(364, 72);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 15);
+            this.label4.Size = new System.Drawing.Size(82, 20);
             this.label4.TabIndex = 46;
             this.label4.Text = "complexity";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(352, 144);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(362, 144);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 15);
+            this.label2.Size = new System.Drawing.Size(84, 20);
             this.label2.TabIndex = 44;
             this.label2.Text = "create date";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(335, 99);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(325, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 15);
+            this.label3.Size = new System.Drawing.Size(130, 20);
             this.label3.TabIndex = 45;
             this.label3.Text = "expected duration";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 30);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(32, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 15);
+            this.label1.Size = new System.Drawing.Size(96, 20);
             this.label1.TabIndex = 43;
             this.label1.Text = "Project name";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(120, 62);
+            this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescription.Location = new System.Drawing.Point(134, 62);
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(100, 23);
+            this.txtDescription.Size = new System.Drawing.Size(180, 27);
             this.txtDescription.TabIndex = 42;
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(120, 96);
+            this.txtLocation.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtLocation.Location = new System.Drawing.Point(134, 96);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(100, 23);
+            this.txtLocation.Size = new System.Drawing.Size(180, 27);
             this.txtLocation.TabIndex = 41;
             // 
             // txtPaymentAmount
             // 
-            this.txtPaymentAmount.Location = new System.Drawing.Point(120, 135);
+            this.txtPaymentAmount.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPaymentAmount.Location = new System.Drawing.Point(134, 135);
             this.txtPaymentAmount.Name = "txtPaymentAmount";
-            this.txtPaymentAmount.Size = new System.Drawing.Size(100, 23);
+            this.txtPaymentAmount.Size = new System.Drawing.Size(180, 27);
             this.txtPaymentAmount.TabIndex = 40;
             // 
             // txtMajor
             // 
-            this.txtMajor.Location = new System.Drawing.Point(444, 22);
+            this.txtMajor.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtMajor.Location = new System.Drawing.Point(461, 25);
             this.txtMajor.Name = "txtMajor";
-            this.txtMajor.Size = new System.Drawing.Size(100, 23);
+            this.txtMajor.Size = new System.Drawing.Size(153, 27);
             this.txtMajor.TabIndex = 38;
             // 
             // txtComplexity
             // 
-            this.txtComplexity.Location = new System.Drawing.Point(444, 62);
+            this.txtComplexity.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtComplexity.Location = new System.Drawing.Point(461, 65);
             this.txtComplexity.Name = "txtComplexity";
-            this.txtComplexity.Size = new System.Drawing.Size(100, 23);
+            this.txtComplexity.Size = new System.Drawing.Size(153, 27);
             this.txtComplexity.TabIndex = 37;
             // 
             // txtProjectName
             // 
-            this.txtProjectName.Location = new System.Drawing.Point(120, 22);
+            this.txtProjectName.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtProjectName.Location = new System.Drawing.Point(134, 22);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(100, 23);
+            this.txtProjectName.Size = new System.Drawing.Size(180, 27);
             this.txtProjectName.TabIndex = 36;
             // 
             // dataGridViewListProposal
@@ -235,9 +255,10 @@
             // 
             // btViewReceivedJob
             // 
-            this.btViewReceivedJob.Location = new System.Drawing.Point(563, 445);
+            this.btViewReceivedJob.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btViewReceivedJob.Location = new System.Drawing.Point(563, 434);
             this.btViewReceivedJob.Name = "btViewReceivedJob";
-            this.btViewReceivedJob.Size = new System.Drawing.Size(180, 23);
+            this.btViewReceivedJob.Size = new System.Drawing.Size(180, 34);
             this.btViewReceivedJob.TabIndex = 53;
             this.btViewReceivedJob.Text = "View  received job";
             this.btViewReceivedJob.UseVisualStyleBackColor = true;
@@ -245,9 +266,10 @@
             // 
             // btViewListJob
             // 
-            this.btViewListJob.Location = new System.Drawing.Point(563, 318);
+            this.btViewListJob.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btViewListJob.Location = new System.Drawing.Point(563, 307);
             this.btViewListJob.Name = "btViewListJob";
-            this.btViewListJob.Size = new System.Drawing.Size(180, 23);
+            this.btViewListJob.Size = new System.Drawing.Size(180, 34);
             this.btViewListJob.TabIndex = 2;
             this.btViewListJob.Text = "View List Job";
             this.btViewListJob.UseVisualStyleBackColor = true;
@@ -286,30 +308,33 @@
             // 
             // dtpExpedtedDay
             // 
-            this.dtpExpedtedDay.Location = new System.Drawing.Point(444, 99);
+            this.dtpExpedtedDay.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpExpedtedDay.Location = new System.Drawing.Point(461, 102);
             this.dtpExpedtedDay.Name = "dtpExpedtedDay";
-            this.dtpExpedtedDay.Size = new System.Drawing.Size(100, 23);
+            this.dtpExpedtedDay.Size = new System.Drawing.Size(153, 27);
             this.dtpExpedtedDay.TabIndex = 62;
             // 
             // txtSkillNeed
             // 
-            this.txtSkillNeed.Location = new System.Drawing.Point(120, 175);
+            this.txtSkillNeed.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSkillNeed.Location = new System.Drawing.Point(134, 179);
             this.txtSkillNeed.Name = "txtSkillNeed";
-            this.txtSkillNeed.Size = new System.Drawing.Size(524, 23);
+            this.txtSkillNeed.Size = new System.Drawing.Size(524, 27);
             this.txtSkillNeed.TabIndex = 61;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label11.Location = new System.Drawing.Point(55, 175);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 15);
+            this.label11.Size = new System.Drawing.Size(73, 20);
             this.label11.TabIndex = 60;
             this.label11.Text = "Skill need";
             // 
             // txtHirerID
             // 
-            this.txtHirerID.Location = new System.Drawing.Point(671, 54);
+            this.txtHirerID.Location = new System.Drawing.Point(695, 55);
             this.txtHirerID.Name = "txtHirerID";
             this.txtHirerID.Size = new System.Drawing.Size(64, 23);
             this.txtHirerID.TabIndex = 59;
@@ -317,7 +342,7 @@
             // 
             // txtProjectID
             // 
-            this.txtProjectID.Location = new System.Drawing.Point(671, 21);
+            this.txtProjectID.Location = new System.Drawing.Point(695, 22);
             this.txtProjectID.Name = "txtProjectID";
             this.txtProjectID.Size = new System.Drawing.Size(64, 23);
             this.txtProjectID.TabIndex = 58;
@@ -326,7 +351,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(612, 62);
+            this.label10.Location = new System.Drawing.Point(636, 63);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(41, 15);
             this.label10.TabIndex = 57;
@@ -336,7 +361,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(612, 24);
+            this.label9.Location = new System.Drawing.Point(636, 25);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 15);
             this.label9.TabIndex = 56;
@@ -345,9 +370,10 @@
             // 
             // btViewProfile
             // 
-            this.btViewProfile.Location = new System.Drawing.Point(563, 509);
+            this.btViewProfile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btViewProfile.Location = new System.Drawing.Point(563, 498);
             this.btViewProfile.Name = "btViewProfile";
-            this.btViewProfile.Size = new System.Drawing.Size(180, 23);
+            this.btViewProfile.Size = new System.Drawing.Size(180, 34);
             this.btViewProfile.TabIndex = 57;
             this.btViewProfile.Text = "ViewProfile";
             this.btViewProfile.UseVisualStyleBackColor = true;
@@ -355,9 +381,10 @@
             // 
             // btSearchName
             // 
-            this.btSearchName.Location = new System.Drawing.Point(334, 241);
+            this.btSearchName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btSearchName.Location = new System.Drawing.Point(401, 243);
             this.btSearchName.Name = "btSearchName";
-            this.btSearchName.Size = new System.Drawing.Size(75, 23);
+            this.btSearchName.Size = new System.Drawing.Size(117, 37);
             this.btSearchName.TabIndex = 63;
             this.btSearchName.Text = "Search";
             this.btSearchName.UseVisualStyleBackColor = true;
@@ -366,24 +393,50 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(60, 245);
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(49, 251);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 15);
+            this.label12.Size = new System.Drawing.Size(100, 21);
             this.label12.TabIndex = 62;
             this.label12.Text = "Search name";
             // 
             // txtSearchName
             // 
-            this.txtSearchName.Location = new System.Drawing.Point(143, 242);
+            this.txtSearchName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSearchName.Location = new System.Drawing.Point(157, 248);
             this.txtSearchName.Name = "txtSearchName";
-            this.txtSearchName.Size = new System.Drawing.Size(185, 23);
+            this.txtSearchName.Size = new System.Drawing.Size(227, 29);
             this.txtSearchName.TabIndex = 61;
+            // 
+            // btSearchBaseSkill
+            // 
+            this.btSearchBaseSkill.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btSearchBaseSkill.Location = new System.Drawing.Point(563, 243);
+            this.btSearchBaseSkill.Name = "btSearchBaseSkill";
+            this.btSearchBaseSkill.Size = new System.Drawing.Size(180, 37);
+            this.btSearchBaseSkill.TabIndex = 64;
+            this.btSearchBaseSkill.Text = "Search Base Skill";
+            this.btSearchBaseSkill.UseVisualStyleBackColor = true;
+            this.btSearchBaseSkill.Click += new System.EventHandler(this.btSearchBaseSkill_Click);
+            // 
+            // btLogout
+            // 
+            this.btLogout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btLogout.Location = new System.Drawing.Point(614, 551);
+            this.btLogout.Name = "btLogout";
+            this.btLogout.Size = new System.Drawing.Size(75, 34);
+            this.btLogout.TabIndex = 65;
+            this.btLogout.Text = "Logout";
+            this.btLogout.UseVisualStyleBackColor = true;
+            this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
             // 
             // FormSeekerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 609);
+            this.Controls.Add(this.btLogout);
+            this.Controls.Add(this.btSearchBaseSkill);
             this.Controls.Add(this.btSearchName);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtSearchName);
@@ -444,5 +497,7 @@
         private System.Windows.Forms.Button btSearchName;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtSearchName;
+        private System.Windows.Forms.Button btSearchBaseSkill;
+        private System.Windows.Forms.Button btLogout;
     }
 }
