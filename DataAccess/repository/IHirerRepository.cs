@@ -18,5 +18,7 @@ namespace DataAccess.repository
         List<Hirer> GetHirers();
 
         Hirer GetHirerByHirerID(int HirerID);
+
+        bool Update(Hirer Hirer);
     }
 }

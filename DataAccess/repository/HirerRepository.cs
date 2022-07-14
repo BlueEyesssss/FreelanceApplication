@@ -21,6 +21,8 @@ namespace DataAccess.repository
 
         public Hirer GetHirerByHirerID(int HirerID) => HirerDAO.Instance.GetHirerByHirerID(HirerID);
 
+        public bool Update(Hirer Hirer) => HirerDAO.Instance.Update(Hirer);
+
 
     }
 }

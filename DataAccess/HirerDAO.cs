@@ -93,7 +93,44 @@ namespace DataAccess
             }
         }
 
-        
+        public bool Update(Hirer Hirer)
+        {
+            bool check = false;
+            try
+            {
+                connect = new SqlConnection(connectionString);
+                if (connect != null)
+                {
+                    connect.Open();
+                    string sql = "update [User] set userName = @userName, password = @password, fullName = @fullName, balance = @balance, phone = @phone, location = @location where userID = @userID";
+                    commad = new SqlCommand(sql, connect);
+
+                    
+                    commad.Parameters.AddWithValue("@userName", Hirer.UserName);
+                    commad.Parameters.AddWithValue("@password", Hirer.Password);
+                    commad.Parameters.AddWithValue("@fullName", Hirer.FullName);
+
+                    commad.Parameters.AddWithValue("@balance", Hirer.Balance);
+                    commad.Parameters.AddWithValue("@phone", Hirer.Phone);
+                    commad.Parameters.AddWithValue("@location", Hirer.Location);
+                    commad.Parameters.AddWithValue("@userID", Hirer.HirerId);
+
+
+
+
+                    check = commad.ExecuteNonQuery() > 0 ? true : false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                connect.Close();
+            }
+            return check;
+        }
 
 
         public Hirer GetHirerByHirerID(int HirerID)

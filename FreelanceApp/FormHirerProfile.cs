@@ -60,9 +60,36 @@ namespace FreelanceApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBoxUserName.Text.Length < 5 || textBoxUserName.Text.Length > 50)
+            {
+                MessageBox.Show("username must be in [5;50]");
+                return;
+            }
+            if (textBoxPassword.Text.Length < 5 || textBoxPassword.Text.Length > 50)
+            {
+                MessageBox.Show("password must be in [5;50]");
+                return;
+            }
+            if (textBoxFullName.Text.Length < 5 || textBoxFullName.Text.Length > 50)
+            {
+                MessageBox.Show("fullname must be in [5;50]");
+                return;
+            }
+            if (textBoxLocation.Text.Length < 5 || textBoxLocation.Text.Length > 50)
+            {
+                MessageBox.Show("Location must be in [5;50]");
+                return;
+            }
+            
+            if (maskedTextBoxPhone.Text.Length != 10)
+            {
+                MessageBox.Show("Please input phone with 10 digits");
+                return;
+            }
             Hirer Hirer = new Hirer
             {
                 HirerId = int.Parse(textBoxUserID.Text),
+                UserId = int.Parse(textBoxUserID.Text),
                 UserName = textBoxUserName.Text,
                 Password = textBoxPassword.Text,
                 FullName = textBoxFullName.Text,
@@ -70,11 +97,12 @@ namespace FreelanceApp
                 Phone = maskedTextBoxPhone.Text,
                 Location = textBoxLocation.Text,
             };
-            //bool check = HirerRepository.Update(Hirer); dang lam chua xong
-            //if (check)
-            //{
-            //    MessageBox.Show("Update successfully!");
-            //}
+            bool check = HirerRepository.Update(Hirer); 
+            if (check)
+            {
+                MessageBox.Show("Update successfully!");
+                this.Close();
+            }
         }
     }
 }
