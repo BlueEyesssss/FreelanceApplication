@@ -55,6 +55,7 @@ namespace FreelanceApp
             //        }
             //    }
             //}
+            buttonDelete.Visible = true;
             dataGridViewListPostedJob.Visible = true;
             dataGridViewAcceptedJob.Visible = false;
             LoadPostedProjectList();
@@ -275,6 +276,7 @@ namespace FreelanceApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            buttonDelete.Visible = false;
             dataGridViewListPostedJob.Visible = false;
             dataGridViewAcceptedJob.Visible = true;
             dataGridViewAcceptedJob.DataSource = ProposalRepository.getListProposalAcceptedByHirerID(this.HirerId);

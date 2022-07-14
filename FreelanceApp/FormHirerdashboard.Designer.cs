@@ -63,16 +63,16 @@
             this.dataGridViewListPostedJob.Name = "dataGridViewListPostedJob";
             this.dataGridViewListPostedJob.ReadOnly = true;
             this.dataGridViewListPostedJob.RowTemplate.Height = 25;
-            this.dataGridViewListPostedJob.Size = new System.Drawing.Size(575, 368);
+            this.dataGridViewListPostedJob.Size = new System.Drawing.Size(797, 368);
             this.dataGridViewListPostedJob.TabIndex = 1;
             this.dataGridViewListPostedJob.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewListPostedJob_CellContentClick);
             this.dataGridViewListPostedJob.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewListPostedJob_CellDoubleClick);
             // 
             // buttonPostAJob
             // 
-            this.buttonPostAJob.Location = new System.Drawing.Point(967, 30);
+            this.buttonPostAJob.Location = new System.Drawing.Point(883, 30);
             this.buttonPostAJob.Name = "buttonPostAJob";
-            this.buttonPostAJob.Size = new System.Drawing.Size(75, 23);
+            this.buttonPostAJob.Size = new System.Drawing.Size(159, 23);
             this.buttonPostAJob.TabIndex = 2;
             this.buttonPostAJob.Text = "Post A Job";
             this.buttonPostAJob.UseVisualStyleBackColor = true;
@@ -81,17 +81,17 @@
             // dataGridViewAcceptedJob
             // 
             this.dataGridViewAcceptedJob.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAcceptedJob.Location = new System.Drawing.Point(58, 168);
+            this.dataGridViewAcceptedJob.Location = new System.Drawing.Point(22, 160);
             this.dataGridViewAcceptedJob.Name = "dataGridViewAcceptedJob";
             this.dataGridViewAcceptedJob.ReadOnly = true;
             this.dataGridViewAcceptedJob.RowTemplate.Height = 25;
-            this.dataGridViewAcceptedJob.Size = new System.Drawing.Size(575, 368);
+            this.dataGridViewAcceptedJob.Size = new System.Drawing.Size(797, 368);
             this.dataGridViewAcceptedJob.TabIndex = 1;
             this.dataGridViewAcceptedJob.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAcceptedJob_CellDoubleClick);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(883, 210);
+            this.button1.Location = new System.Drawing.Point(883, 160);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 23);
             this.button1.TabIndex = 2;
@@ -101,7 +101,7 @@
             // 
             // buttonViewPostedJob
             // 
-            this.buttonViewPostedJob.Location = new System.Drawing.Point(883, 113);
+            this.buttonViewPostedJob.Location = new System.Drawing.Point(883, 106);
             this.buttonViewPostedJob.Name = "buttonViewPostedJob";
             this.buttonViewPostedJob.Size = new System.Drawing.Size(159, 23);
             this.buttonViewPostedJob.TabIndex = 2;
@@ -193,7 +193,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(212, 9);
+            this.label2.Location = new System.Drawing.Point(198, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 15);
             this.label2.TabIndex = 13;
@@ -203,7 +203,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(358, 9);
+            this.label3.Location = new System.Drawing.Point(356, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 14;
@@ -230,7 +230,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(495, 54);
+            this.label6.Location = new System.Drawing.Point(474, 54);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 15);
             this.label6.TabIndex = 17;
@@ -239,7 +239,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(358, 53);
+            this.label7.Location = new System.Drawing.Point(357, 53);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 15);
             this.label7.TabIndex = 18;
@@ -257,7 +257,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(70, 53);
+            this.label9.Location = new System.Drawing.Point(44, 54);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(98, 15);
             this.label9.TabIndex = 20;
@@ -265,9 +265,9 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(883, 354);
+            this.buttonDelete.Location = new System.Drawing.Point(883, 214);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(116, 23);
+            this.buttonDelete.Size = new System.Drawing.Size(159, 23);
             this.buttonDelete.TabIndex = 23;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
