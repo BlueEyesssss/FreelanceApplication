@@ -51,6 +51,14 @@ namespace FreelanceApp
         {
             try
             {
+                if (txtMessage.Text.Length <= 0 || txtMessage.Text.Length > 255)
+                {
+                    return new
+                    {
+                        check = false,
+                        msg = "message must be [1..255] character",
+                    };
+                }
                 if (decimal.Parse(txtPaymentAmount.Text) <= 0)
                 {
                     return new
