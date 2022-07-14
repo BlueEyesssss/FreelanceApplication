@@ -45,7 +45,7 @@ namespace FreelanceApp
             bool check = ProposalRepository.UpdateStatus(proposal.ProposalId, "job started");
             if (check)
             {
-                MessageBox.Show("Update successfully!");
+                MessageBox.Show("Accept successfully!");
             }
         }
 
@@ -54,7 +54,7 @@ namespace FreelanceApp
             bool check = ProposalRepository.UpdateStatus(proposal.ProposalId, "proposal rejected");
             if (check)
             {
-                MessageBox.Show("reject successfully!");
+                MessageBox.Show("Reject successfully!");
             }
         }
     }

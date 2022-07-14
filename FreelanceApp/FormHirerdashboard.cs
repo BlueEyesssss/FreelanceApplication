@@ -139,7 +139,7 @@ namespace FreelanceApp
         public void LoadPostedProjectList()
         {
             BindingSource source;
-            source = new BindingSource();
+            
             List<Project> listP = ProjectRepository.getListProjectByHirerID(this.HirerId);
 
             List<Project> listPNotStarted = new List<Project>();    //list này đc nhưng mà nó dư 3 att là hirer, needskill, proposal nên xài list dưới
@@ -167,19 +167,8 @@ namespace FreelanceApp
                     }
                 }
             }
-
-            
-              
-
-            
-
-
-            
-
             try
-            {
-
-                
+            {   
                 if (listPNotStarted.Count != 0)
                 {
                     source = new BindingSource();
@@ -205,19 +194,22 @@ namespace FreelanceApp
                     textBoxComplexity.DataBindings.Add("Text", source, "complexity");
                     textBoxExpectedDuration.DataBindings.Add("Text", source, "expectedDuration");
                     dateTimePickerCreatedDate.DataBindings.Add("Text", source, "createdDate");
-
-
-
-
                     dataGridViewListPostedJob.DataSource = source;
-                }
-                
-             
+                } else
+                {
+                    source = new BindingSource();
+                    textBoxProjectId.DataBindings.Clear();
+                    textBoxProjectName.DataBindings.Clear();
+                    textBoxDescription.DataBindings.Clear();
+                    textBoxLocation.DataBindings.Clear();
+                    textBoxPaymentAmount.DataBindings.Clear();
+                    textBoxMajor.DataBindings.Clear();
+                    textBoxComplexity.DataBindings.Clear();
+                    textBoxExpectedDuration.DataBindings.Clear();
+                    dateTimePickerCreatedDate.DataBindings.Clear();
+                    dataGridViewListPostedJob.DataSource = source;
 
-
-
-               
-
+                } 
             }
             catch (Exception ex)
             {
