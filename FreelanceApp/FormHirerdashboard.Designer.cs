@@ -64,16 +64,16 @@
             this.dataGridViewListPostedJob.Name = "dataGridViewListPostedJob";
             this.dataGridViewListPostedJob.ReadOnly = true;
             this.dataGridViewListPostedJob.RowTemplate.Height = 25;
-            this.dataGridViewListPostedJob.Size = new System.Drawing.Size(797, 368);
+            this.dataGridViewListPostedJob.Size = new System.Drawing.Size(797, 275);
             this.dataGridViewListPostedJob.TabIndex = 1;
             this.dataGridViewListPostedJob.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewListPostedJob_CellContentClick);
             this.dataGridViewListPostedJob.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewListPostedJob_CellDoubleClick);
             // 
             // buttonPostAJob
             // 
-            this.buttonPostAJob.Location = new System.Drawing.Point(883, 143);
+            this.buttonPostAJob.Location = new System.Drawing.Point(883, 160);
             this.buttonPostAJob.Name = "buttonPostAJob";
-            this.buttonPostAJob.Size = new System.Drawing.Size(159, 23);
+            this.buttonPostAJob.Size = new System.Drawing.Size(155, 38);
             this.buttonPostAJob.TabIndex = 2;
             this.buttonPostAJob.Text = "Post A Job";
             this.buttonPostAJob.UseVisualStyleBackColor = true;
@@ -86,15 +86,15 @@
             this.dataGridViewAcceptedJob.Name = "dataGridViewAcceptedJob";
             this.dataGridViewAcceptedJob.ReadOnly = true;
             this.dataGridViewAcceptedJob.RowTemplate.Height = 25;
-            this.dataGridViewAcceptedJob.Size = new System.Drawing.Size(797, 368);
+            this.dataGridViewAcceptedJob.Size = new System.Drawing.Size(797, 258);
             this.dataGridViewAcceptedJob.TabIndex = 1;
             this.dataGridViewAcceptedJob.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAcceptedJob_CellDoubleClick);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(883, 245);
+            this.button1.Location = new System.Drawing.Point(883, 283);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 23);
+            this.button1.Size = new System.Drawing.Size(155, 38);
             this.button1.TabIndex = 2;
             this.button1.Text = "View Accepted Job";
             this.button1.UseVisualStyleBackColor = true;
@@ -102,9 +102,9 @@
             // 
             // buttonViewPostedJob
             // 
-            this.buttonViewPostedJob.Location = new System.Drawing.Point(883, 195);
+            this.buttonViewPostedJob.Location = new System.Drawing.Point(883, 226);
             this.buttonViewPostedJob.Name = "buttonViewPostedJob";
-            this.buttonViewPostedJob.Size = new System.Drawing.Size(159, 23);
+            this.buttonViewPostedJob.Size = new System.Drawing.Size(155, 38);
             this.buttonViewPostedJob.TabIndex = 2;
             this.buttonViewPostedJob.Text = "View Posted Job";
             this.buttonViewPostedJob.UseVisualStyleBackColor = true;
@@ -144,7 +144,7 @@
             // 
             // textBoxPaymentAmount
             // 
-            this.textBoxPaymentAmount.Location = new System.Drawing.Point(44, 72);
+            this.textBoxPaymentAmount.Location = new System.Drawing.Point(44, 83);
             this.textBoxPaymentAmount.Name = "textBoxPaymentAmount";
             this.textBoxPaymentAmount.ReadOnly = true;
             this.textBoxPaymentAmount.Size = new System.Drawing.Size(100, 23);
@@ -152,7 +152,7 @@
             // 
             // textBoxMajor
             // 
-            this.textBoxMajor.Location = new System.Drawing.Point(187, 72);
+            this.textBoxMajor.Location = new System.Drawing.Point(187, 83);
             this.textBoxMajor.Name = "textBoxMajor";
             this.textBoxMajor.ReadOnly = true;
             this.textBoxMajor.Size = new System.Drawing.Size(100, 23);
@@ -160,7 +160,7 @@
             // 
             // textBoxComplexity
             // 
-            this.textBoxComplexity.Location = new System.Drawing.Point(337, 72);
+            this.textBoxComplexity.Location = new System.Drawing.Point(337, 83);
             this.textBoxComplexity.Name = "textBoxComplexity";
             this.textBoxComplexity.ReadOnly = true;
             this.textBoxComplexity.Size = new System.Drawing.Size(100, 23);
@@ -168,7 +168,7 @@
             // 
             // textBoxExpectedDuration
             // 
-            this.textBoxExpectedDuration.Location = new System.Drawing.Point(477, 72);
+            this.textBoxExpectedDuration.Location = new System.Drawing.Point(477, 83);
             this.textBoxExpectedDuration.Name = "textBoxExpectedDuration";
             this.textBoxExpectedDuration.ReadOnly = true;
             this.textBoxExpectedDuration.Size = new System.Drawing.Size(100, 23);
@@ -231,7 +231,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(474, 54);
+            this.label6.Location = new System.Drawing.Point(474, 65);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 15);
             this.label6.TabIndex = 17;
@@ -240,7 +240,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(357, 53);
+            this.label7.Location = new System.Drawing.Point(357, 64);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 15);
             this.label7.TabIndex = 18;
@@ -249,7 +249,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(212, 54);
+            this.label8.Location = new System.Drawing.Point(212, 65);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(38, 15);
             this.label8.TabIndex = 19;
@@ -258,7 +258,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(44, 54);
+            this.label9.Location = new System.Drawing.Point(44, 65);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(98, 15);
             this.label9.TabIndex = 20;
@@ -266,9 +266,9 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(883, 297);
+            this.buttonDelete.Location = new System.Drawing.Point(883, 343);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(159, 23);
+            this.buttonDelete.Size = new System.Drawing.Size(155, 38);
             this.buttonDelete.TabIndex = 23;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
@@ -278,7 +278,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(883, 30);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 23);
+            this.button2.Size = new System.Drawing.Size(155, 38);
             this.button2.TabIndex = 24;
             this.button2.Text = "My Profile";
             this.button2.UseVisualStyleBackColor = true;
@@ -288,7 +288,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 620);
+            this.ClientSize = new System.Drawing.Size(1075, 444);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.label9);

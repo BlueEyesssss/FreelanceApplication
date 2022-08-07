@@ -48,9 +48,10 @@
             // 
             // buttonReject
             // 
-            this.buttonReject.Location = new System.Drawing.Point(499, 308);
+            this.buttonReject.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonReject.Location = new System.Drawing.Point(403, 237);
             this.buttonReject.Name = "buttonReject";
-            this.buttonReject.Size = new System.Drawing.Size(75, 23);
+            this.buttonReject.Size = new System.Drawing.Size(173, 35);
             this.buttonReject.TabIndex = 31;
             this.buttonReject.Text = "Reject";
             this.buttonReject.UseVisualStyleBackColor = true;
@@ -59,9 +60,10 @@
             // buttonAccept
             // 
             this.buttonAccept.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonAccept.Location = new System.Drawing.Point(268, 308);
+            this.buttonAccept.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonAccept.Location = new System.Drawing.Point(172, 237);
             this.buttonAccept.Name = "buttonAccept";
-            this.buttonAccept.Size = new System.Drawing.Size(75, 23);
+            this.buttonAccept.Size = new System.Drawing.Size(173, 35);
             this.buttonAccept.TabIndex = 30;
             this.buttonAccept.Text = "Accept";
             this.buttonAccept.UseVisualStyleBackColor = true;
@@ -69,113 +71,127 @@
             // 
             // txtProposalId
             // 
-            this.txtProposalId.Location = new System.Drawing.Point(225, 89);
+            this.txtProposalId.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtProposalId.Location = new System.Drawing.Point(204, 37);
             this.txtProposalId.Name = "txtProposalId";
-            this.txtProposalId.Size = new System.Drawing.Size(179, 23);
+            this.txtProposalId.Size = new System.Drawing.Size(141, 32);
             this.txtProposalId.TabIndex = 29;
             // 
             // txtSeekerId
             // 
-            this.txtSeekerId.Location = new System.Drawing.Point(499, 176);
+            this.txtSeekerId.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSeekerId.Location = new System.Drawing.Point(533, 129);
             this.txtSeekerId.Name = "txtSeekerId";
-            this.txtSeekerId.Size = new System.Drawing.Size(179, 23);
+            this.txtSeekerId.Size = new System.Drawing.Size(179, 32);
             this.txtSeekerId.TabIndex = 28;
             // 
             // txtCreatedDate
             // 
-            this.txtCreatedDate.Location = new System.Drawing.Point(499, 132);
+            this.txtCreatedDate.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCreatedDate.Location = new System.Drawing.Point(533, 81);
             this.txtCreatedDate.Name = "txtCreatedDate";
-            this.txtCreatedDate.Size = new System.Drawing.Size(179, 23);
+            this.txtCreatedDate.Size = new System.Drawing.Size(179, 32);
             this.txtCreatedDate.TabIndex = 27;
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(499, 92);
+            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtStatus.Location = new System.Drawing.Point(533, 37);
             this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(179, 23);
+            this.txtStatus.Size = new System.Drawing.Size(179, 32);
             this.txtStatus.TabIndex = 26;
             // 
             // txtMessage
             // 
-            this.txtMessage.Location = new System.Drawing.Point(225, 219);
+            this.txtMessage.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtMessage.Location = new System.Drawing.Point(204, 167);
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(141, 23);
+            this.txtMessage.Size = new System.Drawing.Size(141, 32);
             this.txtMessage.TabIndex = 25;
             // 
             // txtPaymentAmount
             // 
-            this.txtPaymentAmount.Location = new System.Drawing.Point(225, 172);
+            this.txtPaymentAmount.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPaymentAmount.Location = new System.Drawing.Point(204, 124);
             this.txtPaymentAmount.Name = "txtPaymentAmount";
-            this.txtPaymentAmount.Size = new System.Drawing.Size(141, 23);
+            this.txtPaymentAmount.Size = new System.Drawing.Size(141, 32);
             this.txtPaymentAmount.TabIndex = 24;
             // 
             // txtProjectId
             // 
-            this.txtProjectId.Location = new System.Drawing.Point(225, 129);
+            this.txtProjectId.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtProjectId.Location = new System.Drawing.Point(204, 81);
             this.txtProjectId.Name = "txtProjectId";
-            this.txtProjectId.Size = new System.Drawing.Size(141, 23);
+            this.txtProjectId.Size = new System.Drawing.Size(141, 32);
             this.txtProjectId.TabIndex = 23;
             // 
             // ProposalId
             // 
             this.ProposalId.AutoSize = true;
-            this.ProposalId.Location = new System.Drawing.Point(156, 92);
+            this.ProposalId.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ProposalId.Location = new System.Drawing.Point(77, 40);
             this.ProposalId.Name = "ProposalId";
-            this.ProposalId.Size = new System.Drawing.Size(63, 15);
+            this.ProposalId.Size = new System.Drawing.Size(102, 25);
             this.ProposalId.TabIndex = 22;
             this.ProposalId.Text = "ProposalId";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(439, 184);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(433, 132);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 15);
+            this.label6.Size = new System.Drawing.Size(84, 25);
             this.label6.TabIndex = 21;
             this.label6.Text = "SeekerId";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(421, 140);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(400, 88);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 15);
+            this.label5.Size = new System.Drawing.Size(117, 25);
             this.label5.TabIndex = 20;
             this.label5.Text = "CreatedDate";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(451, 100);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(455, 44);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 15);
+            this.label4.Size = new System.Drawing.Size(62, 25);
             this.label4.TabIndex = 19;
             this.label4.Text = "Status";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(165, 222);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(93, 170);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 15);
+            this.label3.Size = new System.Drawing.Size(86, 25);
             this.label3.TabIndex = 18;
             this.label3.Text = "Message";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(121, 179);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(28, 127);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 15);
+            this.label2.Size = new System.Drawing.Size(151, 25);
             this.label2.TabIndex = 17;
             this.label2.Text = "PaymentAmount";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(165, 132);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(92, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 15);
+            this.label1.Size = new System.Drawing.Size(87, 25);
             this.label1.TabIndex = 16;
             this.label1.Text = "ProjectId";
             // 
@@ -183,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(765, 318);
             this.Controls.Add(this.buttonReject);
             this.Controls.Add(this.buttonAccept);
             this.Controls.Add(this.txtProposalId);
